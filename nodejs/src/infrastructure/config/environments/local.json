@@ -1,0 +1,15 @@
+{
+  "env": "local",
+  "port": 3000,
+  "typeorm": {
+    "host": "localhost",
+    "port": 5432,
+    "username": "sheriff",
+    "password": "sup3rs3cr3t",
+    "database": "microservices-nodejs-local",
+    "synchronize": false,
+    "dropSchema": false,
+    "logging": false,
+    "migrationsRun": false
+  }
+}

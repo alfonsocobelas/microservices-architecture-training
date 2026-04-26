@@ -1,0 +1,50 @@
+{
+  "env": "local",
+  "port": 3000,
+  "typeorm": {
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5433,
+    "username": "sheriff",
+    "password": "sup3rs3cr3t",
+    "database": "microservices-nestjs-local",
+    "autoLoadEntities": true,
+    "synchronize": false,
+    "dropSchema": false,
+    "logging": false,
+    "migrationsRun": false,
+    "migrationsTransactionMode": "all"
+  },
+  "rabbitmq": {
+    "connectionSettings": {
+      "username": "sheriff",
+      "password": "sup3rs3cr3t",
+      "vhost": "/",
+      "connection": {
+        "secure": false,
+        "hostname": "localhost",
+        "port": 5672
+      }
+    },
+    "exchangeSettings": {
+      "name": {
+        "default": "domain_events"
+      }
+    },
+    "consumerSettings": {
+      "prefetchCount": {
+        "default": 1
+      }
+    },
+    "queueSettings": {
+      "retry": {
+        "maxRetries": {
+          "default": 5
+        },
+        "retryTTL": {
+          "default": 1000
+        }
+      }
+    }
+  }
+}
