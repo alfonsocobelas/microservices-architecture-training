@@ -1,7 +1,7 @@
 import { Issue } from 'src/contexts/maintenance/modules/issues/domain/issue'
 import { IssueId } from 'src/contexts/maintenance/modules/issues/domain/value-objects/issue-id.vo'
-import { Nullable } from 'src/contexts/shared/types'
-import { Criteria } from 'src/contexts/shared/domain/query/criteria'
+import { Nullable } from '@libs/shared/types'
+import { Criteria } from '@libs/shared/domain/query/criteria'
 import { IssueRepository } from 'src/contexts/maintenance/modules/issues/domain/issue.repository'
 import { MockRepository } from '../../shared/mocks/mock-repository'
 

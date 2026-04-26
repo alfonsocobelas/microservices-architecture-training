@@ -1,4 +1,4 @@
-import { CursorSearchInput } from 'src/contexts/shared/application/dtos/search-input.dto'
+import { CursorSearchInput } from '@libs/shared/application/dtos/search-input.dto'
 
 export class SearchEnginesInputMother {
   static firstCall(): CursorSearchInput {

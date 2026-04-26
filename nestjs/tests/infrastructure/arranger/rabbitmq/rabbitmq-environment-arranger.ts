@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common'
-import { RabbitMqConnection } from 'src/contexts/shared/infrastructure/event-bus/rabbitmq/rabbitmq-connection'
+import { RabbitMqConnection } from '@libs/shared/infrastructure/event-bus/rabbitmq/rabbitmq-connection'
 import { EventBusEnvironmentArranger } from '../event-bus-environment-arranger'
 
 @Injectable()

@@ -1,7 +1,7 @@
 import { SearchIssuesOutput } from 'src/contexts/maintenance/modules/issues/application/dtos/search-issues-output.dto'
-import { CursorPaginatedOutput } from 'src/contexts/shared/application/dtos/search-output.dto'
+import { CursorPaginatedOutput } from '@libs/shared/application/dtos/search-output.dto'
 import { Issue } from 'src/contexts/maintenance/modules/issues/domain/issue'
-import { Nullable } from 'src/contexts/shared/types'
+import { Nullable } from '@libs/shared/types'
 
 export class SearchIssuesOutputMother {
   static fromDomain(

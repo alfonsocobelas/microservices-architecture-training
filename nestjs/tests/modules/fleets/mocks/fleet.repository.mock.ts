@@ -1,7 +1,7 @@
 import { Fleet } from 'src/contexts/operations/modules/fleets/domain/fleet'
 import { FleetId } from 'src/contexts/operations/modules/fleets/domain/value-objects/fleet-id.vo'
-import { Nullable } from 'src/contexts/shared/types'
-import { Criteria } from 'src/contexts/shared/domain/query/criteria'
+import { Nullable } from '@libs/shared/types'
+import { Criteria } from '@libs/shared/domain/query/criteria'
 import { FleetRepository } from 'src/contexts/operations/modules/fleets/domain/fleet.repository'
 import { MockRepository } from '../../shared/mocks/mock-repository'
 

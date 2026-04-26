@@ -1,5 +1,5 @@
 import fc from 'fast-check'
-import { normalizeString } from 'src/contexts/shared/utils/normalize'
+import { normalizeString } from '@libs/shared/utils/normalize'
 import { Aircraft } from 'src/contexts/operations/modules/aircrafts/domain/aircraft'
 import { AircraftStatusEnum } from 'src/contexts/operations/modules/aircrafts/domain/aircraft-enums'
 import { AIRCRAFT_CONSTRAINTS as LIMITS } from 'src/contexts/operations/modules/aircrafts/domain/aircraft-constants'

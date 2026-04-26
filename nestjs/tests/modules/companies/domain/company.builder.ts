@@ -1,6 +1,6 @@
 import { v7 as uuidv7 } from 'uuid'
 import { Company } from 'src/contexts/operations/modules/companies/domain/company'
-import { CompanyId } from 'src/contexts/shared/domain/value-objects/companies/company-id.vo'
+import { CompanyId } from '../../../../apps/operations-service/src/modules/shared/domain/companies/company-id.vo'
 import { CompanyName } from 'src/contexts/operations/modules/companies/domain/value-objects/company-name.vo'
 import { CompanyPrimitiveProps } from 'src/contexts/operations/modules/companies/domain/company-types'
 import { COMPANY_CONSTRAINTS as LIMITS } from 'src/contexts/operations/modules/companies/domain/company-constants'

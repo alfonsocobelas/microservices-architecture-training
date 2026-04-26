@@ -19,7 +19,11 @@ export default defineConfig([
     languageOptions: {
       parser: tsParser,
       parserOptions: {
-        project: './tsconfig.json',
+        project: [
+          './tsconfig.json',
+          './apps/*/tsconfig.app.json',
+          './libs/*/tsconfig.lib.json'
+        ],
         sourceType: 'module'
       },
       globals: globals.node

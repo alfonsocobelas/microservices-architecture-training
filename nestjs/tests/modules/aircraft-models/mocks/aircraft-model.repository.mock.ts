@@ -1,4 +1,4 @@
-import { Nullable } from 'src/contexts/shared/types'
+import { Nullable } from '@libs/shared/types'
 import { AircraftModel } from 'src/contexts/operations/modules/aircraft-models/domain/aircraft-model'
 import { AircraftModelId } from 'src/contexts/operations/modules/aircraft-models/domain/value-objects/aircraft-model-id.vo'
 import { AircraftModelCode } from 'src/contexts/operations/modules/aircraft-models/domain/value-objects/aircraft-model-code.vo'

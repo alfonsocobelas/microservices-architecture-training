@@ -1,4 +1,4 @@
-import { DomainEvent } from 'src/contexts/shared/domain/event-bus/domain-event'
+import { DomainEvent } from '@libs/shared/domain/event-bus/domain-event'
 import { UuidV7Mother } from '../../../modules/shared/domain/mothers/uuidV7.mother'
 
 export class DomainEventDummy extends DomainEvent {

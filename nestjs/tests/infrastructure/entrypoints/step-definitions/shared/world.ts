@@ -1,7 +1,7 @@
 import request from 'supertest'
 import { INestApplication } from '@nestjs/common'
 import { setWorldConstructor, World, IWorldOptions } from '@cucumber/cucumber'
-import { Nullable } from 'src/contexts/shared/types'
+import { Nullable } from '@libs/shared/types'
 import { EventBusEnvironmentArranger } from '../../../arranger/event-bus-environment-arranger'
 import { PersistenceEnvironmentArranger } from '../../../arranger/persistence-environment-arranger'
 

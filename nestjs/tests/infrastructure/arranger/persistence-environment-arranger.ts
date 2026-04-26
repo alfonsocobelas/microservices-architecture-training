@@ -1,4 +1,4 @@
-import { Nullable } from 'src/contexts/shared/types'
+import { Nullable } from '@libs/shared/types'
 
 export abstract class PersistenceEnvironmentArranger {
   abstract arrange(): Promise<void>

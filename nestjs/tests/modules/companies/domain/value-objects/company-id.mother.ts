@@ -1,4 +1,4 @@
-import { CompanyId } from 'src/contexts/shared/domain/value-objects/companies/company-id.vo'
+import { CompanyId } from '../../../../../apps/operations-service/src/modules/shared/domain/companies/company-id.vo'
 import { UuidV7Mother } from '../../../shared/domain/mothers/uuidV7.mother'
 
 export class CompanyIdMother {

@@ -1,6 +1,6 @@
 import { v7 as uuidv7 } from 'uuid'
 import { Engine } from 'src/contexts/operations/modules/engines/domain/engine'
-import { EngineId } from 'src/contexts/shared/domain/value-objects/engines/engine-id.vo'
+import { EngineId } from '@libs/shared/domain/value-objects/engines/engine-id.vo'
 import { EngineStatusEnum } from 'src/contexts/operations/modules/engines/domain/engine-enums'
 import { EngineSerialNumber } from 'src/contexts/operations/modules/engines/domain/value-objects/engine-serial-number.vo'
 import { EnginePrimitiveProps } from 'src/contexts/operations/modules/engines/domain/engine-types'

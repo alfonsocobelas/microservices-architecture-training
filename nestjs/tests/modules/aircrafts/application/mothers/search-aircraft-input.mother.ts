@@ -1,4 +1,4 @@
-import { OffsetSearchInput } from 'src/contexts/shared/application/dtos/search-input.dto'
+import { OffsetSearchInput } from '@libs/shared/application/dtos/search-input.dto'
 
 export class SearchAircraftsInputMother {
   static firstPage(): OffsetSearchInput {

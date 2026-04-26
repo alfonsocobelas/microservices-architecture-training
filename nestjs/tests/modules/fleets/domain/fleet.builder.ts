@@ -1,7 +1,7 @@
 import { v7 as uuidv7 } from 'uuid'
 import { Fleet } from 'src/contexts/operations/modules/fleets/domain/fleet'
 import { FleetId } from 'src/contexts/operations/modules/fleets/domain/value-objects/fleet-id.vo'
-import { CompanyId } from 'src/contexts/shared/domain/value-objects/companies/company-id.vo'
+import { CompanyId } from '../../../../apps/operations-service/src/modules/shared/domain/companies/company-id.vo'
 import { FleetName } from 'src/contexts/operations/modules/fleets/domain/value-objects/fleet-name.vo'
 import { FleetType } from 'src/contexts/operations/modules/fleets/domain/value-objects/fleet-type.vo'
 import { FleetAircraftIds } from 'src/contexts/operations/modules/fleets/domain/value-objects/fleet-aircraftIds.vo'

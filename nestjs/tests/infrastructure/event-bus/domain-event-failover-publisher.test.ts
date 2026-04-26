@@ -1,4 +1,4 @@
-import { TypeOrmDomainEventFailoverPublisher } from 'src/contexts/shared/infrastructure/event-bus/domain-event/failover-publisher/typeorm-domain-event-failover-publisher.'
+import { TypeOrmDomainEventFailoverPublisher } from '@libs/shared/infrastructure/event-bus/domain-event/failover-publisher/typeorm-domain-event-failover-publisher.'
 import { DomainEventMother } from './mothers/domain-event.mother'
 import { moduleFixture } from '../../jest.setup.integration'
 

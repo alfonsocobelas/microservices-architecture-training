@@ -1,5 +1,5 @@
 import fc from 'fast-check'
-import { normalizeString } from 'src/contexts/shared/utils/normalize'
+import { normalizeString } from '@libs/shared/utils/normalize'
 import { IssuePartCategoryEnum, IssueSeverityLevelEnum } from 'src/contexts/maintenance/modules/issues/domain/issue-enums'
 import { ISSUE_CONSTRAINTS as LIMITS } from 'src/contexts/maintenance/modules/issues/domain/issue-constants'
 import { Issue } from 'src/contexts/maintenance/modules/issues/domain/issue'

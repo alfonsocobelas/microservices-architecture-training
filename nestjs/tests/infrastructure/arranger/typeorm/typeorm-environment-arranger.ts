@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { DataSource, EntityManager, EntityMetadata } from 'typeorm'
 import { Injectable, OnModuleInit } from '@nestjs/common'
-import { Nullable } from 'src/contexts/shared/types'
+import { Nullable } from '@libs/shared/types'
 import { PersistenceEnvironmentArranger } from '../persistence-environment-arranger'
 
 @Injectable()

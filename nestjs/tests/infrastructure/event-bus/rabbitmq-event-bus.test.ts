@@ -1,8 +1,8 @@
-import { RabbitMqEventBus } from 'src/contexts/shared/infrastructure/event-bus/rabbitmq/rabbitmq-event-bus'
+import { RabbitMqEventBus } from '@libs/shared/infrastructure/event-bus/rabbitmq/rabbitmq-event-bus'
 import { DomainEventMother } from './mothers/domain-event.mother'
 import { moduleFixture } from '../../jest.setup.integration'
 import { DomainEventSubscriberDummy } from './mocks/domain-event-subscriber.mock'
-import { DomainEventSubscribers } from 'src/contexts/shared/domain/event-bus/domain-event-subscribers'
+import { DomainEventSubscribers } from '@libs/shared/domain/event-bus/domain-event-subscribers'
 
 describe('RabbitMqEventBus (integration test)', () => {
   let eventBus: RabbitMqEventBus

@@ -1,6 +1,6 @@
 import { v7 as uuidv7 } from 'uuid'
 import { Aircraft } from 'src/contexts/operations/modules/aircrafts/domain/aircraft'
-import { AircraftId } from 'src/contexts/shared/domain/value-objects/aircrafts/aircraft-id.vo'
+import { AircraftId } from '@libs/shared/domain/value-objects/aircrafts/aircraft-id.vo'
 import { AircraftModelId } from 'src/contexts/operations/modules/aircraft-models/domain/value-objects/aircraft-model-id.vo'
 import { AircraftTailNumber } from 'src/contexts/operations/modules/aircrafts/domain/value-objects/aircraft-tail-number.vo'
 import { AircraftStatusEnum } from 'src/contexts/operations/modules/aircrafts/domain/aircraft-enums'

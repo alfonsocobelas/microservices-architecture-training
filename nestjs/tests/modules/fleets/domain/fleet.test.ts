@@ -1,5 +1,5 @@
 import fc from 'fast-check'
-import { normalizeString } from 'src/contexts/shared/utils/normalize'
+import { normalizeString } from '@libs/shared/utils/normalize'
 import { Fleet } from 'src/contexts/operations/modules/fleets/domain/fleet'
 import { FleetStatusEnum, FleetTypeEnum, FleetOperationRegionEnum } from 'src/contexts/operations/modules/fleets/domain/fleet-enums'
 import { FLEET_CONSTRAINTS as LIMITS } from 'src/contexts/operations/modules/fleets/domain/fleet-constants'

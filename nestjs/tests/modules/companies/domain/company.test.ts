@@ -1,5 +1,5 @@
 import fc from 'fast-check'
-import { normalizeString } from 'src/contexts/shared/utils/normalize'
+import { normalizeString } from '@libs/shared/utils/normalize'
 import { Company } from 'src/contexts/operations/modules/companies/domain/company'
 import { COMPANY_CONSTRAINTS as LIMIT } from 'src/contexts/operations/modules/companies/domain/company-constants'
 import { CompanyBuilder } from './company.builder'

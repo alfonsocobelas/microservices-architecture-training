@@ -1,5 +1,5 @@
-import { OffsetPaginatedOutput } from 'src/contexts/shared/application/dtos/search-output.dto'
-import { OffsetSearchInput } from 'src/contexts/shared/application/dtos/search-input.dto'
+import { OffsetPaginatedOutput } from '@libs/shared/application/dtos/search-output.dto'
+import { OffsetSearchInput } from '@libs/shared/application/dtos/search-input.dto'
 import { SearchAircraftOutput } from 'src/contexts/operations/modules/aircrafts/application/dtos/search-aircrafts-output.dtos'
 import { Aircraft } from 'src/contexts/operations/modules/aircrafts/domain/aircraft'
 

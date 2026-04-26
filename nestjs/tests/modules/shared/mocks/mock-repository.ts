@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Criteria } from 'src/contexts/shared/domain/query/criteria'
+import { Criteria } from '@libs/shared/domain/query/criteria'
 
 export abstract class MockRepository<T> {
   private mocks: Map<string, jest.Mock> = new Map()
