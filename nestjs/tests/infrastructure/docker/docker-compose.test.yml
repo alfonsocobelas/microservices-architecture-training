@@ -1,15 +1,27 @@
 services:
-  postgres:
+  postgres-operations:
     image: postgres:15
     environment:
       - POSTGRES_HOST=localhost
-      - POSTGRES_DB=microservices-nestjs-test
+      - POSTGRES_DB=operations-ms-nestjs-test
       - POSTGRES_USER=sheriff
       - POSTGRES_PASSWORD=sup3rs3cr3t
     volumes:
       - ./data/postgres:/var/lib/postgresql/data:delegated
     ports:
       - 5433:5432
+    restart: always
+  postgres-maintenance:
+    image: postgres:15
+    environment:
+      - POSTGRES_HOST=localhost
+      - POSTGRES_DB=maintenance-ms-nestjs-test
+      - POSTGRES_USER=sheriff
+      - POSTGRES_PASSWORD=sup3rs3cr3t
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data:delegated
+    ports:
+      - 5434:5432
     restart: always
   rabbitmq:
     image: "rabbitmq:3-management"

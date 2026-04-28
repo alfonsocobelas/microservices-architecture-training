@@ -4,10 +4,10 @@
   "typeorm": {
     "type": "postgres",
     "host": "localhost",
-    "port": 5433,
+    "port": 5434,
     "username": "sheriff",
     "password": "sup3rs3cr3t",
-    "database": "microservices-nestjs-test",
+    "database": "maintenance-ms-nestjs-test",
     "autoLoadEntities": true,
     "synchronize": false,
     "dropSchema": false,

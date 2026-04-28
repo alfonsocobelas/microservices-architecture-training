@@ -7,7 +7,7 @@
     "port": 5433,
     "username": "sheriff",
     "password": "sup3rs3cr3t",
-    "database": "microservices-nestjs-test",
+    "database": "operations-ms-nestjs-test",
     "autoLoadEntities": true,
     "synchronize": false,
     "dropSchema": false,
