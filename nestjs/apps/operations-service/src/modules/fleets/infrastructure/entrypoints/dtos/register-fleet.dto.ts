@@ -1,5 +1,5 @@
 import { IsNotEmpty, IsString, IsUUID, Max, MaxLength, Min, MinLength } from 'class-validator'
-import { FLEET_CONSTRAINTS as LIMIT } from 'src/contexts/operations/modules/fleets/domain/fleet-constants'
+import { FLEET_CONSTRAINTS as LIMIT } from '../../../../fleets/domain/fleet-constants'
 
 export class RegisterFleetDto {
   @IsString()

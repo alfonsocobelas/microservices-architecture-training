@@ -31,22 +31,4 @@ const baseConfig = {
   testTimeout: 30000
 };
 
-let config = baseConfig;
-
-if (process.env.JEST_ENV === 'unit') {
-  config = {
-    ...baseConfig,
-    setupFilesAfterEnv: ['<rootDir>/tests/jest.setup.unit.ts'],
-    testMatch: ['<rootDir>/tests/modules/**/*.test.ts']
-  }
-}
-
-if (process.env.JEST_ENV === 'integration') {
-  config = {
-    ...baseConfig,
-    setupFilesAfterEnv: ['<rootDir>/tests/jest.setup.integration.ts'],
-    testMatch: ['<rootDir>/tests/infrastructure/**/*.test.ts']
-  }
-}
-
-module.exports = config;
+module.exports = baseConfig;

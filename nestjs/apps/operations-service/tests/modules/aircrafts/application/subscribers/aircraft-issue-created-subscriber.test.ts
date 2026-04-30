@@ -1,6 +1,6 @@
-import { AircraftIssueCreatedSubscriber } from 'src/contexts/operations/modules/aircrafts/application/subscribers/issue-created.subscriber'
-import { UpdateAircraftToMaintenanceStatusUseCase } from 'src/contexts/operations/modules/aircrafts/application/use-cases/update-aircraft-to-maintenance-status-usecase.service'
-import { IssueRegisteredDomainEventMother } from '../../../issues/domain/events/issue-registerd-event.mother'
+import { IssueRegisteredDomainEventMother } from '../../../../../../maintenance-service/tests/modules/issues/domain/events/issue-registerd-event.mother'
+import { AircraftIssueCreatedSubscriber } from '../../../../../src/modules/aircrafts/application/subscribers/issue-created.subscriber'
+import { UpdateAircraftToMaintenanceStatusUseCase } from '../../../../../src/modules/aircrafts/application/use-cases/update-aircraft-to-maintenance-status-usecase.service'
 
 describe('AircraftIssueCreatedSubscriber (unit tests)', () => {
   let subscriber: AircraftIssueCreatedSubscriber

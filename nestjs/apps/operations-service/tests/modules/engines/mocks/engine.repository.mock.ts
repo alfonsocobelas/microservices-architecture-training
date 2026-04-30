@@ -1,11 +1,11 @@
-import { Engine } from 'src/contexts/operations/modules/engines/domain/engine'
 import { Nullable } from '@libs/shared/types'
 import { Criteria } from '@libs/shared/domain/query/criteria'
 import { EngineId } from '@libs/shared/domain/value-objects/engines/engine-id.vo'
-import { EngineRepository } from 'src/contexts/operations/modules/engines/domain/engine.repository'
-import { EngineSerialNumber } from 'src/contexts/operations/modules/engines/domain/value-objects/engine-serial-number.vo'
-import { MockRepository } from '../../shared/mocks/mock-repository'
-import { EngineStatus } from 'src/contexts/operations/modules/engines/domain/value-objects/engine-status.vo'
+import { MockRepository } from '@libs/testing'
+import { Engine } from '../../../../src/modules/engines/domain/engine'
+import { EngineRepository } from '../../../../src/modules/engines/domain/engine.repository'
+import { EngineSerialNumber } from '../../../../src/modules/engines/domain/value-objects/engine-serial-number.vo'
+import { EngineStatus } from '../../../../src/modules/engines/domain/value-objects/engine-status.vo'
 
 export class EngineRepositoryMock
   extends MockRepository<Engine>

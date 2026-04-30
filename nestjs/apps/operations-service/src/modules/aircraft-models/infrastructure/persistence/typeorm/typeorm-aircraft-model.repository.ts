@@ -8,8 +8,8 @@ import { AircraftModelEntity } from './typeorm-aircraft-model.entity'
 import { AircraftModelMapper } from './typeorm-aircraft-model.mapper'
 import { AircraftModel } from '../../../domain/aircraft-model'
 import { AircraftModelRepository } from '../../../domain/aircraft-model.repository'
-import { AircraftModelId } from 'src/contexts/operations/modules/aircraft-models/domain/value-objects/aircraft-model-id.vo'
-import { AircraftModelCode } from 'src/contexts/operations/modules/aircraft-models/domain/value-objects/aircraft-model-code.vo'
+import { AircraftModelId } from '../../../domain/value-objects/aircraft-model-id.vo'
+import { AircraftModelCode } from '../../../domain/value-objects/aircraft-model-code.vo'
 
 @Injectable()
 export class TypeOrmAircraftModelRepository

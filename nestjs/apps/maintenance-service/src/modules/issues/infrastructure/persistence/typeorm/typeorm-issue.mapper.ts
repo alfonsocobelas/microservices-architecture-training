@@ -1,4 +1,4 @@
-import { Issue } from 'src/contexts/maintenance/modules/issues/domain/issue'
+import { Issue } from '../../../../../../src/modules/issues/domain/issue'
 import { IssueEntity } from './typeorm-issue.entity'
 
 export class IssueMapper {

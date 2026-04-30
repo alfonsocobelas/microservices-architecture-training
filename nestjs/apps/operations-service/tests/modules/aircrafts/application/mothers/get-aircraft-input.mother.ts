@@ -1,5 +1,5 @@
-import { GetAircraftInput } from 'src/contexts/operations/modules/aircrafts/application/dtos/get-aircraft-input.dto'
 import { v7 as uuidv7 } from 'uuid'
+import { GetAircraftInput } from '../../../../../src/modules/aircrafts/application/dtos/get-aircraft-input.dto'
 
 export class GetAircraftInputMother {
   static create(id: string): GetAircraftInput {

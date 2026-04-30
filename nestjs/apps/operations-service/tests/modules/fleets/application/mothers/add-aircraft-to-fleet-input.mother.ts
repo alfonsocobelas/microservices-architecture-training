@@ -1,5 +1,5 @@
 import { v7 as uuidv7 } from 'uuid'
-import { AddAircraftToFleetInput } from 'src/contexts/operations/modules/fleets/application/dtos/add-aircraft-to-fleet-input.dto'
+import { AddAircraftToFleetInput } from '../../../../../src/modules/fleets/application/dtos/add-aircraft-to-fleet-input.dto'
 
 export class AddAircraftToFleetInputMother {
   static create(fleetId: string, aircraftId: string): AddAircraftToFleetInput {

@@ -1,8 +1,9 @@
-import { GetFleetUseCase } from 'src/contexts/operations/modules/fleets/application/use-cases/get-fleet-usecase.service'
+
 import { GetFleetInputMother } from '../mothers/get-fleet-input.mother'
 import { GetFleetOutputMother } from '../mothers/get-fleet-output.mother'
 import { FleetRepositoryMock } from '../../mocks/fleet.repository.mock'
 import { FleetMother } from '../../domain/fleet.mother'
+import { GetFleetUseCase } from '../../../../../src/modules/fleets/application/use-cases/get-fleet-usecase.service'
 
 describe('GetFleetUseCase (unit tests)', () => {
   let repository: FleetRepositoryMock

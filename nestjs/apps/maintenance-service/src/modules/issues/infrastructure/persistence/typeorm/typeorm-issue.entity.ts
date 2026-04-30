@@ -1,6 +1,6 @@
 import { Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn, DeleteDateColumn, Check, Index } from 'typeorm'
 import { Nullable } from '@libs/shared/types'
-import { IssuePartCategoryEnum, IssueSeverityLevelEnum } from 'src/contexts/maintenance/modules/issues/domain/issue-enums'
+import { IssuePartCategoryEnum, IssueSeverityLevelEnum } from '../../../../../../src/modules/issues/domain/issue-enums'
 import { ISSUE_CONSTRAINTS as LIMITS } from '../../../domain/issue-constants'
 
 @Entity({ name: 'issues', schema: 'maintenance' })

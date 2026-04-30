@@ -1,5 +1,4 @@
 import { Controller, Get, Post, Body, Param, Delete } from '@nestjs/common'
-import { ParseUUIDv7Pipe } from '@libs/shared/infrastructure/pipes/parse-uuid-v7.pipe'
 import { RegisterAircraftModelDto } from './dtos/register-aircraft-model.dto'
 import { GetAircraftModelResponse } from './dtos/get-aircraft-model.response'
 import { ListAircraftModelCatalogueResponse } from './dtos/list-aircraft-model-catalogue.response'
@@ -7,6 +6,7 @@ import { GetAircraftModelHandler } from '../../application/handlers/get-aircraft
 import { RemoveAircraftModelHandler } from '../../application/handlers/remove-aircraft-model.handler'
 import { RegisterAircraftModelHandler } from '../../application/handlers/register-aircraft-model.handler'
 import { ListAircraftModelCatalogueHandler } from '../../application/handlers/list-aircraft-model-catalogue.handler'
+import { ParseUUIDv7Pipe } from '../../../shared/infrastructure/pipes/parse-uuid-v7.pipe'
 
 @Controller('aircraft-models')
 export class AircraftModelsController {

@@ -1,11 +1,12 @@
 import { Injectable } from '@nestjs/common'
 import { Criteria } from '@libs/shared/domain/query/criteria'
 import { Cursor } from '@libs/shared/domain/query/cursor'
-import { CursorSearchInput } from '@libs/shared/application/dtos/search-input.dto'
-import { CursorPaginatedOutput } from '@libs/shared/application/dtos/search-output.dto'
+
 import { SearchEnginesOutput } from '../dtos/search-engines-output.dto'
 import { EngineRepository } from '../../domain/engine.repository'
 import searchEnginesConfig from '../config/search-engines-config'
+import { CursorSearchInput } from '../../../shared/application/dtos/search-input.dto'
+import { CursorPaginatedOutput } from '../../../shared/application/dtos/search-output.dto'
 
 @Injectable()
 export class SearchEnginesUseCase {

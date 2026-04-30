@@ -2,6 +2,7 @@ export interface AppConfig {
   env: string;
   port: number;
   typeorm: TypeORMConfig;
+  rabbitmq: RabbitMqConfig;
 }
 
 export interface TypeORMConfig {

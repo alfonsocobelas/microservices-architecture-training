@@ -1,6 +1,6 @@
 import { Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn, DeleteDateColumn, Check, Index } from 'typeorm'
 import { Nullable } from '@libs/shared/types'
-import { EngineStatusEnum } from 'src//contexts/operations/modules/engines/domain/engine-enums'
+import { EngineStatusEnum } from '../../../../engines/domain/engine-enums'
 import { ENGINE_CONSTRAINTS as LIMITS } from '../../../domain/engine-constants'
 
 @Entity({ name: 'engines', schema: 'operations' })

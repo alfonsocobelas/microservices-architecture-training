@@ -1,9 +1,8 @@
-import { Fleet } from 'src/contexts/operations/modules/fleets/domain/fleet'
-import { FleetPrimitiveProps } from 'src/contexts/operations/modules/fleets/domain/fleet-types'
-import { FleetStatusEnum } from 'src/contexts/operations/modules/fleets/domain/fleet-enums'
+import { randomEnumValue, repeat } from '@libs/testing'
+import { Fleet } from '../../../../src/modules/fleets/domain/fleet'
+import { FleetStatusEnum } from '../../../../src/modules/fleets/domain/fleet-enums'
+import { FleetPrimitiveProps } from '../../../../src/modules/fleets/domain/fleet-types'
 import { FleetBuilder } from './fleet.builder'
-import { randomEnumValue } from '../../shared/utils/random-enum'
-import { repeat } from '../../shared/utils/random-array'
 
 export class FleetMother {
   static fromInput(input: Partial<FleetPrimitiveProps>): Fleet {

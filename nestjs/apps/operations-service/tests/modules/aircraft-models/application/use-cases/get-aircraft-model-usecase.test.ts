@@ -1,8 +1,8 @@
-import { GetAircraftModelUseCase } from 'src/contexts/operations/modules/aircraft-models/application/use-cases/get-aircraft-model-usecase.service'
 import { AircraftModelMother } from '../../domain/aircraft-model.mother'
 import { GetAircraftModelInputMother } from '../dtos/get-aircraft-model-input.mother'
 import { GetAircraftModelOutputMother } from '../dtos/get-aircraft-model-output.mother'
 import { AircraftModelRepositoryMock } from '../../mocks/aircraft-model.repository.mock'
+import { GetAircraftModelUseCase } from '../../../../../src/modules/aircraft-models/application/use-cases/get-aircraft-model-usecase.service'
 
 describe('GetAircraftModelUseCase (unit tests)', () => {
   let repository: AircraftModelRepositoryMock

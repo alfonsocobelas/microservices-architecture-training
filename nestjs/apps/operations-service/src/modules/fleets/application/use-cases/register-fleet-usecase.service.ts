@@ -1,12 +1,12 @@
 import { Injectable } from '@nestjs/common'
 import { EventBus } from '@libs/shared/domain/event-bus/event-bus'
-import { AircraftRepository } from 'src/contexts/operations/modules/aircrafts/domain/aircraft.repository'
 import { AlreadyExistsError, InvalidArgumentError } from '@libs/shared/errors'
 import { RegisterFleetInput } from '../dtos/register-fleet-input.dto'
 import { Fleet } from '../../domain/fleet'
 import { withName } from '../../domain/specifications/fleet-with-name.specification'
 import { FleetRepository } from '../../domain/fleet.repository'
 import { FleetInputMapper } from '../../domain/fleet-factory'
+import { AircraftRepository } from '../../../aircrafts/domain/aircraft.repository'
 
 @Injectable()
 export class RegisterFleetUseCase {

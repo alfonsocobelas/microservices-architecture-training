@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common'
+import { EventBusModule } from '@libs/shared'
 import { IssuesModule } from './modules/issues/issues.module'
-import { SharedModule } from '@libs/shared'
 import { CoreConfigModule } from './modules/shared/infrastructure/config/config.module'
 import { PersistenceModule } from './modules/shared/infrastructure/persistence/persistence.module'
 
@@ -9,7 +9,7 @@ import { PersistenceModule } from './modules/shared/infrastructure/persistence/p
     // infrastructure
     CoreConfigModule,
     PersistenceModule,
-    SharedModule,
+    EventBusModule,
     // modules
     IssuesModule
   ],

@@ -1,7 +1,7 @@
-import { OffsetPaginatedOutput } from '@libs/shared/application/dtos/search-output.dto'
-import { OffsetSearchInput } from '@libs/shared/application/dtos/search-input.dto'
-import { SearchAircraftOutput } from 'src/contexts/operations/modules/aircrafts/application/dtos/search-aircrafts-output.dtos'
-import { Aircraft } from 'src/contexts/operations/modules/aircrafts/domain/aircraft'
+import { SearchAircraftOutput } from '../../../../../src/modules/aircrafts/application/dtos/search-aircrafts-output.dtos'
+import { Aircraft } from '../../../../../src/modules/aircrafts/domain/aircraft'
+import { OffsetSearchInput } from '../../../../../src/modules/shared/application/dtos/search-input.dto'
+import { OffsetPaginatedOutput } from '../../../../../src/modules/shared/application/dtos/search-output.dto'
 
 export class SearchAircraftsOutputMother {
   static fromDomain(

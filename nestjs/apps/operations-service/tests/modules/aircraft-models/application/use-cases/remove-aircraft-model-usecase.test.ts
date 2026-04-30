@@ -1,10 +1,11 @@
-import { aircraftsOfModel } from 'src/contexts/operations/modules/aircrafts/domain/specifications/aircrafts-of-model.specification'
-import { RemoveAircraftModelUseCase } from 'src/contexts/operations/modules/aircraft-models/application/use-cases/remove-aircraft-model-usecase.service'
+
 import { RemoveAircraftModelInputMother } from '../dtos/remove-aircraft-model-input.mother'
 import { AircraftModelMother } from '../../domain/aircraft-model.mother'
 import { AircraftModelRepositoryMock } from '../../mocks/aircraft-model.repository.mock'
 import { AircraftRepositoryMock } from '../../../aircrafts/mocks/aircraft.repository.mock'
-import { EventBusMock } from '../../../shared/mocks/event-bus.mock'
+import { EventBusMock } from '@libs/testing'
+import { RemoveAircraftModelUseCase } from '../../../../../src/modules/aircraft-models/application/use-cases/remove-aircraft-model-usecase.service'
+import { aircraftsOfModel } from '../../../../../src/modules/aircrafts/domain/specifications/aircrafts-of-model.specification'
 
 const ZERO_AIRCRAFTS_COUNT = 0
 

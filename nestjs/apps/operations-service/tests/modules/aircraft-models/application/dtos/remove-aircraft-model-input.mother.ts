@@ -1,5 +1,5 @@
-import { RemoveAircraftModelInput } from 'src/contexts/operations/modules/aircraft-models/application/dtos/remove-aircraft-model-input.dto'
 import { v7 as uuidv7 } from 'uuid'
+import { RemoveAircraftModelInput } from '../../../../../src/modules/aircraft-models/application/dtos/remove-aircraft-model-input.dto'
 
 export class RemoveAircraftModelInputMother {
   static create(id: string): RemoveAircraftModelInput {

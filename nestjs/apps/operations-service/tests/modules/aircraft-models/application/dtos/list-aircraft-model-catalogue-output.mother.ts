@@ -1,5 +1,5 @@
-import { ListAircraftModelCatalogueOutput } from 'src/contexts/operations/modules/aircraft-models/application/dtos/list-aircraft-model-catalogue-output.dto'
-import { AircraftModel } from 'src/contexts/operations/modules/aircraft-models/domain/aircraft-model'
+import { ListAircraftModelCatalogueOutput } from '../../../../../src/modules/aircraft-models/application/dtos/list-aircraft-model-catalogue-output.dto'
+import { AircraftModel } from '../../../../../src/modules/aircraft-models/domain/aircraft-model'
 
 export class ListAircraftModelCatalogueOutputMother {
   static fromDomain(domain: AircraftModel): ListAircraftModelCatalogueOutput {

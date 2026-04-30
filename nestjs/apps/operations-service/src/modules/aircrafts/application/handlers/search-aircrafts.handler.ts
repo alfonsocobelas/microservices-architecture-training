@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common'
-import { PaginateOffsetDto } from '@libs/shared/infrastructure/dtos/paginate-offset.dto'
 import { SearchAircraftsResponse } from '../../infrastructure/entrypoints/dtos/search-aircrafts.response'
 import { SearchAircraftsUseCase } from '../use-cases/search-aircrafts-usecase.service'
+import { PaginateOffsetDto } from '../../../shared/infrastructure/dtos/paginate-offset.dto'
 
 @Injectable()
 export class SearchAircraftsHandler {

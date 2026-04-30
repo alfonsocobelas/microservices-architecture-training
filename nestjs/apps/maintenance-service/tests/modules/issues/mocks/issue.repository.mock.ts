@@ -1,9 +1,9 @@
-import { Issue } from 'src/contexts/maintenance/modules/issues/domain/issue'
-import { IssueId } from 'src/contexts/maintenance/modules/issues/domain/value-objects/issue-id.vo'
 import { Nullable } from '@libs/shared/types'
 import { Criteria } from '@libs/shared/domain/query/criteria'
-import { IssueRepository } from 'src/contexts/maintenance/modules/issues/domain/issue.repository'
-import { MockRepository } from '../../shared/mocks/mock-repository'
+import { Issue } from '../../../../src/modules/issues/domain/issue'
+import { IssueId } from '../../../../src/modules/issues/domain/value-objects/issue-id.vo'
+import { IssueRepository } from '../../../../src/modules/issues/domain/issue.repository'
+import { MockRepository } from '@libs/testing'
 
 export class IssueRepositoryMock
   extends MockRepository<Issue>

@@ -5,11 +5,12 @@ import { Criteria } from '@libs/shared/domain/query/criteria'
 import { TypeOrmRepository } from '@libs/shared/infrastructure/persistence/typeorm/typeorm.repository'
 import { TypeOrmCriteriaConverter } from '@libs/shared/infrastructure/persistence/typeorm/typeorm-criteria-converter'
 import { TypeOrmTransactionManager } from '@libs/shared/infrastructure/persistence/typeorm/typeorm-transaction-manager'
-import { Issue } from 'src/contexts/maintenance/modules/issues/domain/issue'
-import { IssueRepository } from 'src/contexts/maintenance/modules/issues/domain/issue.repository'
+
 import { IssueEntity } from './typeorm-issue.entity'
 import { IssueMapper } from './typeorm-issue.mapper'
-import { IssueId } from 'src/contexts/maintenance/modules/issues/domain/value-objects/issue-id.vo'
+import { IssueRepository } from '../../../domain/issue.repository'
+import { Issue } from '../../../domain/issue'
+import { IssueId } from '../../../domain/value-objects/issue-id.vo'
 
 @Injectable()
 export class TypeOrmIssueRepository

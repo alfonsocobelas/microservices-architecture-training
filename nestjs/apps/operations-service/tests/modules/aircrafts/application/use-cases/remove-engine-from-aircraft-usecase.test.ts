@@ -1,12 +1,14 @@
-import { RemoveEngineFromAircraftUsecase } from 'src/contexts/operations/modules/aircrafts/application/use-cases/remove-engine-from-aircraft-usecase.service'
+
 import { RemoveEngineFromAircraftInputMother } from '../mothers/remove-engine-from-aircraft-input.mother'
 import { EngineMother } from '../../../engines/domain/engine.mother'
 import { EngineBuilder } from '../../../engines/domain/engine.builder'
 import { AircraftBuilder } from '../../domain/aircraft.builder'
-import { EventBusMock } from '../../../shared/mocks/event-bus.mock'
+
 import { EngineRepositoryMock } from '../../../engines/mocks/engine.repository.mock'
 import { AircraftRepositoryMock } from '../../mocks/aircraft.repository.mock'
 import { AircraftMother } from '../../domain/aircraft.mother'
+import { EventBusMock } from '@libs/testing'
+import { RemoveEngineFromAircraftUsecase } from '../../../../../src/modules/aircrafts/application/use-cases/remove-engine-from-aircraft-usecase.service'
 
 describe('RemoveEngineFromAircraftUseCase (unit tests)', () => {
   let aircraftRepository: AircraftRepositoryMock

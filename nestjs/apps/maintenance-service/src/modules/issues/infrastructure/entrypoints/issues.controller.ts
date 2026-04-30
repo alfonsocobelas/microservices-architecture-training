@@ -1,13 +1,14 @@
 import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common'
-import { ParseCriteriaPipe } from '@libs/shared/infrastructure/pipes/parse-criteria.pipe'
-import { ParseUUIDv7Pipe } from '@libs/shared/infrastructure/pipes/parse-uuid-v7.pipe'
-import { PaginateCursorDto } from '@libs/shared/infrastructure/dtos/paginate-cursor.dto'
+
 import { RegisterIssueDto } from './dtos/register-issue.dto'
 import { GetIssueResponse } from './dtos/get-issue.response'
 import { SearchIssuesResponse } from './dtos/search-issues.response'
 import { GetIssueHandler } from '../../application/handlers/get-issue.handler'
 import { SearchIssuesHandler } from '../../application/handlers/search-issues.handler'
 import { RegisterIssueHandler } from '../../application/handlers/register-issue.handler'
+import { PaginateCursorDto } from '../../../shared/infrastructure/dtos/paginate-cursor.dto'
+import { ParseCriteriaPipe } from '../../../shared/infrastructure/pipes/parse-criteria.pipe'
+import { ParseUUIDv7Pipe } from '../../../shared/infrastructure/pipes/parse-uuid-v7.pipe'
 
 @Controller('issues')
 export class IssuesController {

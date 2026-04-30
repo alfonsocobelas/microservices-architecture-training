@@ -1,7 +1,8 @@
 import { Injectable } from '@nestjs/common'
-import { PaginateCursorDto } from '@libs/shared/infrastructure/dtos/paginate-cursor.dto'
+
 import { SearchEnginesResponse } from '../../infrastructure/entrypoints/dtos/search-engines.response'
 import { SearchEnginesUseCase } from '../use-cases/search-engines-usecase.service'
+import { PaginateCursorDto } from '../../../shared/infrastructure/dtos/paginate-cursor.dto'
 
 @Injectable()
 export class SearchEnginesHandler {

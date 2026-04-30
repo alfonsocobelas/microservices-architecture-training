@@ -1,14 +1,14 @@
-import { Issue } from 'src/contexts/maintenance/modules/issues/domain/issue'
 import { Cursor } from '@libs/shared/domain/query/cursor'
 import { Orders } from '@libs/shared/domain/query/orders'
 import { Filters } from '@libs/shared/domain/query/filters'
-import { CursorSearchInput } from '@libs/shared/application/dtos/search-input.dto'
-import { SearchIssuesUseCase } from 'src/contexts/maintenance/modules/issues/application/use-cases/search-issues-usecase.service'
+import { repeat } from '@libs/testing'
 import { IssueMother } from '../../domain/issue.mother'
 import { SearchIssuesInputMother } from '../mothers/search-issues-input.mother'
 import { SearchIssuesOutputMother } from '../mothers/search-issues-output.mother'
 import { IssueRepositoryMock } from '../../mocks/issue.repository.mock'
-import { repeat } from '../../../shared/utils/random-array'
+import { Issue } from '../../../../../src/modules/issues/domain/issue'
+import { CursorSearchInput } from '../../../../../src/modules/shared/application/dtos/search-input.dto'
+import { SearchIssuesUseCase } from '../../../../../src/modules/issues/application/use-cases/search-issues-usecase.service'
 
 describe('SearchIssuesUseCase (unit tests)', () => {
   let repository: IssueRepositoryMock

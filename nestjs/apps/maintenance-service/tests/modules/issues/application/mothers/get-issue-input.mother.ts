@@ -1,5 +1,5 @@
-import { GetIssueInput } from 'src/contexts/maintenance/modules/issues/application/dtos/get-issue-input.dto'
 import { v7 as uuidv7 } from 'uuid'
+import { GetIssueInput } from '../../../../../src/modules/issues/application/dtos/get-issue-input.dto'
 
 export class GetIssueInputMother {
   static create(id: string): GetIssueInput {

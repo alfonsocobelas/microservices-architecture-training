@@ -1,5 +1,5 @@
 import { v7 as uuidv7 } from 'uuid'
-import { RetireAircraftsFromFleetInput } from 'src/contexts/operations/modules/fleets/application/dtos/retire-aircrafts-from-fleet-input.dto'
+import { RetireAircraftsFromFleetInput } from '../../../../../src/modules/fleets/application/dtos/retire-aircrafts-from-fleet-input.dto'
 
 export class RetireAircraftsFromFleetInputMother {
   static create(fleetId: string, aircraftIds: string[]): RetireAircraftsFromFleetInput {

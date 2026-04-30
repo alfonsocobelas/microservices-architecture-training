@@ -1,14 +1,16 @@
-import { Engine } from 'src/contexts/operations/modules/engines/domain/engine'
+
 import { Cursor } from '@libs/shared/domain/query/cursor'
 import { Orders } from '@libs/shared/domain/query/orders'
 import { Filters } from '@libs/shared/domain/query/filters'
-import { CursorSearchInput } from '@libs/shared/application/dtos/search-input.dto'
-import { SearchEnginesUseCase } from 'src/contexts/operations/modules/engines/application/use-cases/search-engines-usecase.service'
+
 import { SearchEnginesInputMother } from '../mothers/search-engines-input.mother'
 import { SearchEnginesOutputMother } from '../mothers/search-engines-output.mother'
 import { EngineRepositoryMock } from '../../mocks/engine.repository.mock'
 import { EngineMother } from '../../domain/engine.mother'
-import { repeat } from '../../../shared/utils/random-array'
+import { repeat } from '@libs/testing'
+import { SearchEnginesUseCase } from '../../../../../src/modules/engines/application/use-cases/search-engines-usecase.service'
+import { Engine } from '../../../../../src/modules/engines/domain/engine'
+import { CursorSearchInput } from '../../../../../src/modules/shared/application/dtos/search-input.dto'
 
 describe('SearchEnginesUseCase (unit tests)', () => {
   let repository: EngineRepositoryMock

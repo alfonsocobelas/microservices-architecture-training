@@ -2,8 +2,8 @@ import { Global, Module } from '@nestjs/common'
 import { ConfigService } from '@nestjs/config'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { TransactionManager } from '@libs/shared/domain/persistence/transaction-manager'
-import { TypeOrmCriteriaConverter } from './typeorm/typeorm-criteria-converter'
-import { TypeOrmTransactionManager } from './typeorm/typeorm-transaction-manager'
+import { TypeOrmCriteriaConverter } from '@libs/shared/infrastructure/persistence/typeorm/typeorm-criteria-converter'
+import { TypeOrmTransactionManager } from '@libs/shared/infrastructure/persistence/typeorm/typeorm-transaction-manager'
 
 @Global()
 @Module({

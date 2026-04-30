@@ -1,5 +1,5 @@
 import { EngineId } from '@libs/shared/domain/value-objects/engines/engine-id.vo'
-import { UuidV7Mother } from '../../../shared/domain/mothers/uuidV7.mother'
+import { UuidV7Mother } from '@libs/testing'
 
 export class EngineIdMother {
   static create(value: string): EngineId {

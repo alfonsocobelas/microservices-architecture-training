@@ -1,7 +1,7 @@
-import { SearchFleetOutput } from 'src/contexts/operations/modules/fleets/application/dtos/search-fleets-output.dto'
-import { OffsetSearchInput } from '@libs/shared/application/dtos/search-input.dto'
-import { OffsetPaginatedOutput } from '@libs/shared/application/dtos/search-output.dto'
-import { Fleet } from 'src/contexts/operations/modules/fleets/domain/fleet'
+import { SearchFleetOutput } from '../../../../../src/modules/fleets/application/dtos/search-fleets-output.dto'
+import { Fleet } from '../../../../../src/modules/fleets/domain/fleet'
+import { OffsetSearchInput } from '../../../../../src/modules/shared/application/dtos/search-input.dto'
+import { OffsetPaginatedOutput } from '../../../../../src/modules/shared/application/dtos/search-output.dto'
 
 export class SearchFleetsOutputMother {
   static fromDomain(

@@ -1,5 +1,5 @@
+import { UuidV7Mother } from '@libs/testing'
 import { CompanyId } from '../../../../../src/modules/shared/domain/companies/company-id.vo'
-import { UuidV7Mother } from '../../../shared/domain/mothers/uuidV7.mother'
 
 export class CompanyIdMother {
   static create(value: string): CompanyId {

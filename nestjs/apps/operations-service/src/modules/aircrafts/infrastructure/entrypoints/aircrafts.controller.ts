@@ -1,7 +1,5 @@
 import { Body, Controller, Delete, Get, Param, Post, Query } from '@nestjs/common'
-import { ParseUUIDv7Pipe } from '@libs/shared/infrastructure/pipes/parse-uuid-v7.pipe'
-import { ParseCriteriaPipe } from '@libs/shared/infrastructure/pipes/parse-criteria.pipe'
-import { PaginateOffsetDto } from '@libs/shared/infrastructure/dtos/paginate-offset.dto'
+
 import { RegisterAircraftDto } from './dtos/register-aircraft.dto'
 import { GetAircraftResponse } from './dtos/get-aircraft.response'
 import { SearchAircraftsResponse } from './dtos/search-aircrafts.response'
@@ -13,6 +11,9 @@ import { RegisterAircraftHandler } from '../../application/handlers/register-air
 import { InstallEngineInAircraftHandler } from '../../application/handlers/install-engine-in-aircraft.handler'
 import { RemoveEngineFromAircraftHandler } from '../../application/handlers/remove-engine-from-aircraft.handler'
 import { FindAircraftsInMaintenanceHandler } from '../../application/handlers/find-aircrafts-in-maintenance.handler'
+import { ParseCriteriaPipe } from '../../../shared/infrastructure/pipes/parse-criteria.pipe'
+import { ParseUUIDv7Pipe } from '../../../shared/infrastructure/pipes/parse-uuid-v7.pipe'
+import { PaginateOffsetDto } from '../../../shared/infrastructure/dtos/paginate-offset.dto'
 
 @Controller('aircrafts')
 export class AircraftsController {

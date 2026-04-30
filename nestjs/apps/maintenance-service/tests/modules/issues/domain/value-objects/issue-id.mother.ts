@@ -1,5 +1,5 @@
-import { IssueId } from 'src/contexts/maintenance/modules/issues/domain/value-objects/issue-id.vo'
-import { UuidV7Mother } from '../../../shared/domain/mothers/uuidV7.mother'
+import { UuidV7Mother } from '@libs/testing'
+import { IssueId } from '../../../../../src/modules/issues/domain/value-objects/issue-id.vo'
 
 export class IssueIdMother {
   static create(value: string): IssueId {

@@ -1,4 +1,4 @@
-import { Engine } from 'src/contexts/operations/modules/engines/domain/engine'
+import { Engine } from '../../../domain/engine'
 import { EngineEntity } from './typeorm-engine.entity'
 
 export class EngineMapper {

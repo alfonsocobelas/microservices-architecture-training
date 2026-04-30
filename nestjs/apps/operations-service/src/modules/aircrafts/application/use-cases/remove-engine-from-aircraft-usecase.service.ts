@@ -2,9 +2,9 @@ import { Injectable } from '@nestjs/common'
 import { EventBus } from '@libs/shared/domain/event-bus/event-bus'
 import { EngineId } from '@libs/shared/domain/value-objects/engines/engine-id.vo'
 import { AircraftId } from '@libs/shared/domain/value-objects/aircrafts/aircraft-id.vo'
-import { EngineRepository } from 'src/contexts/operations/modules/engines/domain/engine.repository'
-import { AircraftRepository } from 'src/contexts/operations/modules/aircrafts/domain/aircraft.repository'
 import { EntityNotFoundError } from '@libs/shared/errors'
+import { EngineRepository } from '../../../engines/domain/engine.repository'
+import { AircraftRepository } from '../../../aircrafts/domain/aircraft.repository'
 import { RemoveEngineFromAircraftInput } from '../dtos/remove-engine-from-aircraft-input.dto'
 
 @Injectable()

@@ -1,15 +1,15 @@
 import { EntityTarget } from 'typeorm'
 import { Injectable } from '@nestjs/common'
-import { Fleet } from 'src/contexts/operations/modules/fleets/domain/fleet'
-import { FleetId } from 'src/contexts/operations/modules/fleets/domain/value-objects/fleet-id.vo'
 import { Nullable } from '@libs/shared/types'
 import { Criteria } from '@libs/shared/domain/query/criteria'
-import { FleetRepository } from 'src/contexts/operations/modules/fleets/domain/fleet.repository'
 import { TypeOrmRepository } from '@libs/shared/infrastructure/persistence/typeorm/typeorm.repository'
 import { TypeOrmCriteriaConverter } from '@libs/shared/infrastructure/persistence/typeorm/typeorm-criteria-converter'
 import { TypeOrmTransactionManager } from '@libs/shared/infrastructure/persistence/typeorm/typeorm-transaction-manager'
 import { FleetEntity } from './typeorm-fleet.entity'
 import { FleetMapper } from './typeorm-fleet.mapper'
+import { FleetRepository } from '../../../domain/fleet.repository'
+import { Fleet } from '../../../domain/fleet'
+import { FleetId } from '../../../domain/value-objects/fleet-id.vo'
 
 @Injectable()
 export class TypeOrmFleetRepository

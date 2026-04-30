@@ -1,5 +1,5 @@
 import { IsNotEmpty, IsString, IsUUID, MaxLength, MinLength } from 'class-validator'
-import { ENGINE_CONSTRAINTS as LIMITS } from 'src/contexts/operations/modules/engines/domain/engine-constants'
+import { ENGINE_CONSTRAINTS as LIMITS } from '../../../../engines/domain/engine-constants'
 
 export class RegisterEngineDto {
   @IsString()

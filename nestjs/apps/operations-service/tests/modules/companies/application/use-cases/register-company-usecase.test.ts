@@ -1,8 +1,8 @@
-import { RegisterCompanyUseCase } from 'src/contexts/operations/modules/companies/application/use-cases/register-company-usecase.service'
 import { RegisterCompanyInputMother } from '../mothers/register-company-input.mother'
 import { CompanyMother } from '../../domain/company.mother'
 import { CompanyRepositoryMock } from '../../mocks/company.repository.mock'
-import { EventBusMock } from '../../../shared/mocks/event-bus.mock'
+import { EventBusMock } from '@libs/testing'
+import { RegisterCompanyUseCase } from '../../../../../src/modules/companies/application/use-cases/register-company-usecase.service'
 
 describe('RegisterCompanyUseCase (unit tests)', () => {
   let repository: CompanyRepositoryMock

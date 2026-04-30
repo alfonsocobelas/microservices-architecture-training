@@ -1,13 +1,14 @@
 import { v7 as uuidv7 } from 'uuid'
-import { Aircraft } from 'src/contexts/operations/modules/aircrafts/domain/aircraft'
+
 import { AircraftId } from '@libs/shared/domain/value-objects/aircrafts/aircraft-id.vo'
-import { AircraftModelId } from 'src/contexts/operations/modules/aircraft-models/domain/value-objects/aircraft-model-id.vo'
-import { AircraftTailNumber } from 'src/contexts/operations/modules/aircrafts/domain/value-objects/aircraft-tail-number.vo'
-import { AircraftStatusEnum } from 'src/contexts/operations/modules/aircrafts/domain/aircraft-enums'
-import { AircraftPrimitiveProps } from 'src/contexts/operations/modules/aircrafts/domain/aircraft-types'
-import { AIRCRAFT_DEFAULTS as DEFAULT,AIRCRAFT_CONSTRAINTS as LIMITS } from 'src/contexts/operations/modules/aircrafts/domain/aircraft-constants'
-import { randomString } from '../../shared/utils/random-string'
-import { randomNumber } from '../../shared/utils/random-number'
+
+import { AIRCRAFT_DEFAULTS as DEFAULT,AIRCRAFT_CONSTRAINTS as LIMITS } from '../../../../src/modules/aircrafts/domain/aircraft-constants'
+import { randomString, randomNumber } from '@libs/testing'
+import { AircraftModelId } from '../../../../src/modules/aircraft-models/domain/value-objects/aircraft-model-id.vo'
+import { AircraftStatusEnum } from '../../../../src/modules/aircrafts/domain/aircraft-enums'
+import { AircraftPrimitiveProps } from '../../../../src/modules/aircrafts/domain/aircraft-types'
+import { AircraftTailNumber } from '../../../../src/modules/aircrafts/domain/value-objects/aircraft-tail-number.vo'
+import { Aircraft } from '../../../../src/modules/aircrafts/domain/aircraft'
 
 /**
  * IMPORTANT: In integration tests, be careful with fields that have uniqueness constraints.

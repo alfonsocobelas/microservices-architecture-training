@@ -1,10 +1,10 @@
-import { Aircraft } from 'src/contexts/operations/modules/aircrafts/domain/aircraft'
 import { Nullable } from '@libs/shared/types'
 import { Criteria } from '@libs/shared/domain/query/criteria'
 import { AircraftId } from '@libs/shared/domain/value-objects/aircrafts/aircraft-id.vo'
-import { AircraftRepository } from 'src/contexts/operations/modules/aircrafts/domain/aircraft.repository'
-import { MockRepository } from '../../shared/mocks/mock-repository'
-import { AircraftStatus } from 'src/contexts/operations/modules/aircrafts/domain/value-objects/aircraft-status.vo'
+import { MockRepository } from '@libs/testing'
+import { AircraftRepository } from '../../../../src/modules/aircrafts/domain/aircraft.repository'
+import { Aircraft } from '../../../../src/modules/aircrafts/domain/aircraft'
+import { AircraftStatus } from '../../../../src/modules/aircrafts/domain/value-objects/aircraft-status.vo'
 
 export class AircraftRepositoryMock
   extends MockRepository<Aircraft>

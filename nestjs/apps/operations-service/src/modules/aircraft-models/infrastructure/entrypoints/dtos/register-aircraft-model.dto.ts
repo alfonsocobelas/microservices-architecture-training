@@ -1,5 +1,5 @@
 import { IsNotEmpty, IsString, IsUUID, IsInt, Min, Max, MinLength, MaxLength } from 'class-validator'
-import { AIRCRAFT_MODEL_CONSTRAINTS as LIMITS } from 'src/contexts/operations/modules/aircraft-models/domain/aircraft-model-constants'
+import { AIRCRAFT_MODEL_CONSTRAINTS as LIMITS } from '../../../domain/aircraft-model-constants'
 
 export class RegisterAircraftModelDto {
 	@IsString()

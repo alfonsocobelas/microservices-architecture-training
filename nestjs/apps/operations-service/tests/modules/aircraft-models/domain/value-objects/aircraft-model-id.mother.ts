@@ -1,5 +1,5 @@
-import { AircraftModelId } from 'src/contexts/operations/modules/aircraft-models/domain/value-objects/aircraft-model-id.vo'
-import { UuidV7Mother } from '../../../shared/domain/mothers/uuidV7.mother'
+import { UuidV7Mother } from '@libs/testing'
+import { AircraftModelId } from '../../../../../src/modules/aircraft-models/domain/value-objects/aircraft-model-id.vo'
 
 export class AircraftModelIdMother {
   static create(value: string): AircraftModelId {

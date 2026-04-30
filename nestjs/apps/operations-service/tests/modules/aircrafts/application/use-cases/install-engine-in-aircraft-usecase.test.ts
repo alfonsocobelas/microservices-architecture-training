@@ -1,15 +1,16 @@
-import { AircraftStatusEnum } from 'src/contexts/operations/modules/aircrafts/domain/aircraft-enums'
-import { InstallEngineInAircraftUsecase } from 'src/contexts/operations/modules/aircrafts/application/use-cases/install-engine-in-aircraft-usecase.service'
+
 import { InstallEngineInAircraftInputMother } from '../mothers/install-engine-in-aircraft-input.mother'
 import { EngineMother } from '../../../engines/domain/engine.mother'
 import { AircraftMother } from '../../domain/aircraft.mother'
 import { AircraftBuilder } from '../../domain/aircraft.builder'
 import { AircraftModelBuilder } from '../../../aircraft-models/domain/aircraft-model.builder'
-import { EventBusMock } from '../../../shared/mocks/event-bus.mock'
+
 import { EngineRepositoryMock } from '../../../engines/mocks/engine.repository.mock'
 import { AircraftRepositoryMock } from '../../mocks/aircraft.repository.mock'
-import { TransactionManagerMock } from '../../../shared/mocks/transaction-manager.mock'
 import { AircraftModelRepositoryMock } from '../../../aircraft-models/mocks/aircraft-model.repository.mock'
+import { TransactionManagerMock, EventBusMock } from '@libs/testing'
+import { InstallEngineInAircraftUsecase } from '../../../../../src/modules/aircrafts/application/use-cases/install-engine-in-aircraft-usecase.service'
+import { AircraftStatusEnum } from '../../../../../src/modules/aircrafts/domain/aircraft-enums'
 
 describe('InstallEngineInAircraftUseCase (unit tests)', () => {
   let aircraftRepository: AircraftRepositoryMock

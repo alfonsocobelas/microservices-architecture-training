@@ -1,8 +1,9 @@
-import { RegisterAircraftModelUseCase } from 'src/contexts/operations/modules/aircraft-models/application/use-cases/register-aircraft-model-usecase.service'
 import { AircraftModelMother } from '../../domain/aircraft-model.mother'
 import { RegisterAircraftModelInputMother } from '../dtos/register-aircraft-model-intput.mother'
-import { EventBusMock } from '../../../shared/mocks/event-bus.mock'
+
 import { AircraftModelRepositoryMock } from '../../mocks/aircraft-model.repository.mock'
+import { EventBusMock } from '@libs/testing'
+import { RegisterAircraftModelUseCase } from '../../../../../src/modules/aircraft-models/application/use-cases/register-aircraft-model-usecase.service'
 
 describe('RegisterAircraftModelUseCase (unit test)', () => {
   let repository: AircraftModelRepositoryMock

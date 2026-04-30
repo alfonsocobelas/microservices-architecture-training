@@ -1,9 +1,10 @@
-import { UpdateEngineToMaintenanceStatusUseCase } from 'src/contexts/operations/modules/engines/application/use-cases/update-engine-to-maintenance-status-usecase.service'
+
 import { UpdateEngineToMaintenanceStatusInputMother } from '../mothers/update-engine-to-maintenance-status-input.mother'
 import { EngineIdMother } from '../../domain/value-objects/engine-id.mother'
 import { EngineMother } from '../../domain/engine.mother'
 import { EngineRepositoryMock } from '../../mocks/engine.repository.mock'
-import { EventBusMock } from '../../../shared/mocks/event-bus.mock'
+import { EventBusMock } from '@libs/testing'
+import { UpdateEngineToMaintenanceStatusUseCase } from '../../../../../src/modules/engines/application/use-cases/update-engine-to-maintenance-status-usecase.service'
 
 describe('UpdateEngineToMaintenanceStatusUseCase (unit tests)', () => {
   let repository: EngineRepositoryMock

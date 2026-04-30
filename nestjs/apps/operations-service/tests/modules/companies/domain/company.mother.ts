@@ -1,7 +1,7 @@
-import { CompanyCreateProps, CompanyPrimitiveProps } from 'src/contexts/operations/modules/companies/domain/company-types'
-import { Company } from 'src/contexts/operations/modules/companies/domain/company'
+import { repeat } from '@libs/testing'
+import { Company } from '../../../../src/modules/companies/domain/company'
+import { CompanyPrimitiveProps, CompanyCreateProps } from '../../../../src/modules/companies/domain/company-types'
 import { CompanyBuilder } from './company.builder'
-import { repeat } from '../../shared/utils/random-array'
 
 export class CompanyMother {
   static fromInput(input: Partial<CompanyPrimitiveProps>): Company {

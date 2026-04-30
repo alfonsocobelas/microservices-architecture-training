@@ -11,6 +11,7 @@ services:
     ports:
       - 5433:5432
     restart: always
+
   postgres-maintenance:
     image: postgres:15
     environment:
@@ -23,6 +24,7 @@ services:
     ports:
       - 5434:5432
     restart: always
+
   rabbitmq:
     image: "rabbitmq:3-management"
     ports:

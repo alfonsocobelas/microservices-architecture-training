@@ -1,7 +1,8 @@
-import { SearchEnginesOutput } from 'src/contexts/operations/modules/engines/application/dtos/search-engines-output.dto'
-import { CursorPaginatedOutput } from '@libs/shared/application/dtos/search-output.dto'
-import { Engine } from 'src/contexts/operations/modules/engines/domain/engine'
+
 import { Nullable } from '@libs/shared/types'
+import { SearchEnginesOutput } from '../../../../../src/modules/engines/application/dtos/search-engines-output.dto'
+import { Engine } from '../../../../../src/modules/engines/domain/engine'
+import { CursorPaginatedOutput } from '../../../../../src/modules/shared/application/dtos/search-output.dto'
 
 export class SearchEnginesOutputMother {
   static fromDomain(

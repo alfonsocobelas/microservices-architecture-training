@@ -1,5 +1,5 @@
 import { v7 as uuidv7 } from 'uuid'
-import { GetCompanyInput } from 'src/contexts/operations/modules/companies/application/dtos/get-company-input.dto'
+import { GetCompanyInput } from '../../../../../src/modules/companies/application/dtos/get-company-input.dto'
 
 export class GetCompanyInputMother {
   static create(id: string): GetCompanyInput {

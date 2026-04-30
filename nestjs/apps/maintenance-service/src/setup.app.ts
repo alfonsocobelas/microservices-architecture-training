@@ -3,9 +3,9 @@ import compression from 'compression'
 import { Reflector } from '@nestjs/core'
 import { NestExpressApplication } from '@nestjs/platform-express'
 import { ClassSerializerInterceptor, INestApplication, ValidationPipe, VersioningType } from '@nestjs/common'
-import { GlobalExceptionFilter } from '@libs/shared/infrastructure/filters/http-exception.filter'
+import { GlobalExceptionFilter } from './modules/shared/infrastructure/filters/http-exception.filter'
 
-export function setupApp(app: INestApplication | NestExpressApplication) {
+export function setupApp(app: INestApplication | NestExpressApplication): INestApplication | NestExpressApplication {
   app.use(helmet())
   app.use(compression())
   app.enableCors({

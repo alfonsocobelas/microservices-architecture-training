@@ -1,4 +1,4 @@
-import { Fleet } from 'src/contexts/operations/modules/fleets/domain/fleet'
+import { Fleet } from '../../../domain/fleet'
 import { FleetEntity } from './typeorm-fleet.entity'
 
 export class FleetMapper {

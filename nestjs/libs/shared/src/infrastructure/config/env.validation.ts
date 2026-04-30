@@ -84,34 +84,7 @@ class RabbitMqValidator {
     queueSettings!: QueueSettingsValidator
 }
 
-class TypeOrmValidator {
-  @IsString()
-    host!: string
-  @IsNumber()
-    port!: number
-  @IsString()
-    username!: string
-  @IsString()
-    password!: string
-  @IsString()
-    database!: string
-  @IsBoolean()
-    synchronize!: boolean
-  @IsBoolean()
-    dropSchema!: boolean
-  @IsBoolean()
-    logging!: boolean
-  @IsBoolean()
-    migrationsRun!: boolean
-}
-
 class RootValidator {
-  @IsString()
-    env!: string
-  @IsNumber()
-    port!: number
-  @ValidateNested() @Type(() => TypeOrmValidator)
-    typeorm!: TypeOrmValidator
   @ValidateNested() @Type(() => RabbitMqValidator)
     rabbitmq!: RabbitMqValidator
 }

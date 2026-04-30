@@ -1,11 +1,13 @@
-import { RegisterFleetUseCase } from 'src/contexts/operations/modules/fleets/application/use-cases/register-fleet-usecase.service'
-import { withName } from 'src/contexts/operations/modules/fleets/domain/specifications/fleet-with-name.specification'
+
 import { FleetMother } from '../../domain/fleet.mother'
 import { AircraftBuilder } from '../../../aircrafts/domain/aircraft.builder'
 import { RegisterFleetInputMother } from '../mothers/register-fleet-input.mother'
-import { EventBusMock } from '../../../shared/mocks/event-bus.mock'
+
 import { FleetRepositoryMock } from '../../mocks/fleet.repository.mock'
 import { AircraftRepositoryMock } from '../../../aircrafts/mocks/aircraft.repository.mock'
+import { EventBusMock } from '@libs/testing'
+import { RegisterFleetUseCase } from '../../../../../src/modules/fleets/application/use-cases/register-fleet-usecase.service'
+import { withName } from '../../../../../src/modules/fleets/domain/specifications/fleet-with-name.specification'
 
 describe('RegisterFleetUseCase (unit tests)', () => {
   let fleetRepository: FleetRepositoryMock

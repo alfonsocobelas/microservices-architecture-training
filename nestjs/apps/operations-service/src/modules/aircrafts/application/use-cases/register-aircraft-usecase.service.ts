@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common'
 import { EventBus } from '@libs/shared/domain/event-bus/event-bus'
-import { AircraftModelRepository } from 'src/contexts/operations/modules/aircraft-models/domain/aircraft-model.repository'
+import { AircraftModelRepository } from '../../../aircraft-models/domain/aircraft-model.repository'
 import { AlreadyExistsError, EntityNotFoundError } from '@libs/shared/errors'
 import { RegisterAircraftInput } from '../dtos/register-aircraft-input.dto'
 import { Aircraft } from '../../domain/aircraft'

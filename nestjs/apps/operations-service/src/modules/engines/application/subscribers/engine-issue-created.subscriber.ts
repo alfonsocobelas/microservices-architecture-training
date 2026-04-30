@@ -1,10 +1,11 @@
 import { Injectable } from '@nestjs/common'
-import { EventSubscriber } from '@libs/shared/application/decorators/event-subscriber.decorator'
 import { DomainEventClass } from '@libs/shared/domain/event-bus/domain-event'
 import { DomainEventSubscriber } from '@libs/shared/domain/event-bus/domain-event-subscriber'
-import { IssuePartCategoryEnum } from 'src/contexts/maintenance/modules/issues/domain/issue-enums'
-import { IssueRegisteredDomainEvent } from 'src/contexts/maintenance/modules/issues/domain/events/issue-registered.event'
+
 import { UpdateEngineToMaintenanceStatusUseCase } from '../use-cases/update-engine-to-maintenance-status-usecase.service'
+import { EventSubscriber } from '../../../shared/application/decorators/event-subscriber.decorator'
+import { IssueRegisteredDomainEvent } from '../../../shared/domain/issues/issue-registered.event'
+import { IssuePartCategoryEnum } from '../../../shared/domain/issues/issue-enums'
 
 @Injectable()
 @EventSubscriber()

@@ -1,12 +1,11 @@
 import { v7 as uuidv7 } from 'uuid'
-import { Aircraft } from 'src/contexts/operations/modules/aircrafts/domain/aircraft'
-import { AircraftStatusEnum } from 'src/contexts/operations/modules/aircrafts/domain/aircraft-enums'
-import { RegisterAircraftInput } from 'src/contexts/operations/modules/aircrafts/application/dtos/register-aircraft-input.dto'
-import { AircraftPrimitiveProps } from 'src/contexts/operations/modules/aircrafts/domain/aircraft-types'
+
 import { AircraftBuilder } from './aircraft.builder'
-import { repeat } from '../../shared/utils/random-array'
-import { randomBoolean } from '../../shared/utils/random-boolean'
-import { randomEnumValue } from '../../shared/utils/random-enum'
+import { Aircraft } from '../../../../src/modules/aircrafts/domain/aircraft'
+import { randomEnumValue, randomBoolean, repeat } from '@libs/testing'
+import { RegisterAircraftInput } from '../../../../src/modules/aircrafts/application/dtos/register-aircraft-input.dto'
+import { AircraftStatusEnum } from '../../../../src/modules/aircrafts/domain/aircraft-enums'
+import { AircraftPrimitiveProps } from '../../../../src/modules/aircrafts/domain/aircraft-types'
 
 export class AircraftMother {
   static fromInput(input: Partial<AircraftPrimitiveProps>): Aircraft {

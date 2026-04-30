@@ -1,5 +1,5 @@
 import { AircraftId } from '@libs/shared/domain/value-objects/aircrafts/aircraft-id.vo'
-import { AircraftModelId } from 'src/contexts/operations/modules/aircraft-models/domain/value-objects/aircraft-model-id.vo'
+import { AircraftModelId } from '../../aircraft-models/domain/value-objects/aircraft-model-id.vo'
 import { AircraftTailNumber } from './value-objects/aircraft-tail-number.vo'
 
 export interface AircraftPrimitiveProps {

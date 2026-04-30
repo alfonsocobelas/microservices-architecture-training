@@ -1,8 +1,8 @@
-import { GetCompanyUseCase } from 'src/contexts/operations/modules/companies/application/use-cases/get-company-usecase.service'
 import { GetCompanyInputMother } from '../mothers/get-company-input.mother'
 import { GetCompanyOutputMother } from '../mothers/get-company-output.mother'
 import { CompanyMother } from '../../domain/company.mother'
 import { CompanyRepositoryMock } from '../../mocks/company.repository.mock'
+import { GetCompanyUseCase } from '../../../../../src/modules/companies/application/use-cases/get-company-usecase.service'
 
 describe('GetCompanyUseCase (unit tests)', () => {
   let repository: CompanyRepositoryMock

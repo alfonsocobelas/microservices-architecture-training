@@ -1,12 +1,12 @@
 import { v7 as uuidv7 } from 'uuid'
-import { Engine } from 'src/contexts/operations/modules/engines/domain/engine'
-import { EngineId } from '@libs/shared/domain/value-objects/engines/engine-id.vo'
-import { EngineStatusEnum } from 'src/contexts/operations/modules/engines/domain/engine-enums'
-import { EngineSerialNumber } from 'src/contexts/operations/modules/engines/domain/value-objects/engine-serial-number.vo'
-import { EnginePrimitiveProps } from 'src/contexts/operations/modules/engines/domain/engine-types'
-import { ENGINE_DEFAULTS as DEFAULT, ENGINE_CONSTRAINTS as LIMITS } from 'src/contexts/operations/modules/engines/domain/engine-constants'
-import { randomString } from '../../shared/utils/random-string'
-import { randomNumber } from '../../shared/utils/random-number'
+
+import { ENGINE_DEFAULTS as DEFAULT, ENGINE_CONSTRAINTS as LIMITS } from '../../../../src/modules/engines/domain/engine-constants'
+import { EngineId } from '@libs/shared'
+import { randomString, randomNumber } from '@libs/testing'
+import { Engine } from '../../../../src/modules/engines/domain/engine'
+import { EngineStatusEnum } from '../../../../src/modules/engines/domain/engine-enums'
+import { EnginePrimitiveProps } from '../../../../src/modules/engines/domain/engine-types'
+import { EngineSerialNumber } from '../../../../src/modules/engines/domain/value-objects/engine-serial-number.vo'
 
 /**
  * IMPORTANT: In integration tests, be careful with fields that have uniqueness constraints.

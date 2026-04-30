@@ -1,13 +1,13 @@
 import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common'
-import { ParseCriteriaPipe } from '@libs/shared/infrastructure/pipes/parse-criteria.pipe'
-import { ParseUUIDv7Pipe } from '@libs/shared/infrastructure/pipes/parse-uuid-v7.pipe'
-import { PaginateOffsetDto } from '@libs/shared/infrastructure/dtos/paginate-offset.dto'
 import { RegisterFleetDto } from './dtos/register-fleet.dto'
 import { GetFleetResponse } from './dtos/get-fleet.response'
 import { SearchFleetsResponse } from './dtos/search-fleets.response'
 import { GetFleetHandler } from '../../application/handlers/get-fleet.handler'
 import { SearchFleetsHandler } from '../../application/handlers/search-fleets.handler'
 import { RegisterFleetHandler } from '../../application/handlers/register-fleet.handler'
+import { ParseUUIDv7Pipe } from '../../../shared/infrastructure/pipes/parse-uuid-v7.pipe'
+import { ParseCriteriaPipe } from '../../../shared/infrastructure/pipes/parse-criteria.pipe'
+import { PaginateOffsetDto } from '../../../shared/infrastructure/dtos/paginate-offset.dto'
 
 @Controller('fleets')
 export class FleetsController {

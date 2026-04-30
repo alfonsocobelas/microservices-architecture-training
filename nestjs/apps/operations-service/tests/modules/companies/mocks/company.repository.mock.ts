@@ -1,10 +1,11 @@
-import { Company } from 'src/contexts/operations/modules/companies/domain/company'
+
 import { Nullable } from '@libs/shared/types'
 import { Criteria } from '@libs/shared/domain/query/criteria'
 import { CompanyId } from '../../../../src/modules/shared/domain/companies/company-id.vo'
-import { CompanyName } from 'src/contexts/operations/modules/companies/domain/value-objects/company-name.vo'
-import { CompanyRepository } from 'src/contexts/operations/modules/companies/domain/company.repository'
-import { MockRepository } from '../../shared/mocks/mock-repository'
+import { MockRepository } from '@libs/testing'
+import { Company } from '../../../../src/modules/companies/domain/company'
+import { CompanyRepository } from '../../../../src/modules/companies/domain/company.repository'
+import { CompanyName } from '../../../../src/modules/companies/domain/value-objects/company-name.vo'
 
 export class CompanyRepositoryMock
   extends MockRepository<Company>

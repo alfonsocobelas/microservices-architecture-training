@@ -8,6 +8,8 @@ data/
 
 # cache jest
 .tmp/jestCache/
+apps/maintenance-service/.tmp/
+apps/operations-service/.tmp/
 
 # coverage tests
 coverage/

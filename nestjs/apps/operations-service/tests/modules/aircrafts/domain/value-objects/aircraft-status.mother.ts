@@ -1,6 +1,6 @@
-import { AircraftStatusEnum } from 'src/contexts/operations/modules/aircrafts/domain/aircraft-enums'
-import { AircraftStatus } from 'src/contexts/operations/modules/aircrafts/domain/value-objects/aircraft-status.vo'
-import { randomEnumValue } from '../../../shared/utils/random-enum'
+import { randomEnumValue } from '@libs/testing'
+import { AircraftStatusEnum } from '../../../../../src/modules/aircrafts/domain/aircraft-enums'
+import { AircraftStatus } from '../../../../../src/modules/aircrafts/domain/value-objects/aircraft-status.vo'
 
 export class AircraftStatusMother {
   static create(value: AircraftStatusEnum): AircraftStatus {

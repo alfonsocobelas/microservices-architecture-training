@@ -1,6 +1,6 @@
-import { EngineIssueCreatedSubscriber } from 'src/contexts/operations/modules/engines/application/subscribers/engine-issue-created.subscriber'
-import { UpdateEngineToMaintenanceStatusUseCase } from 'src/contexts/operations/modules/engines/application/use-cases/update-engine-to-maintenance-status-usecase.service'
-import { IssueRegisteredDomainEventMother } from '../../../issues/domain/events/issue-registerd-event.mother'
+import { IssueRegisteredDomainEventMother } from '../../../../../../maintenance-service/tests/modules/issues/domain/events/issue-registerd-event.mother'
+import { EngineIssueCreatedSubscriber } from '../../../../../src/modules/engines/application/subscribers/engine-issue-created.subscriber'
+import { UpdateEngineToMaintenanceStatusUseCase } from '../../../../../src/modules/engines/application/use-cases/update-engine-to-maintenance-status-usecase.service'
 
 describe('EngineIssueCreatedSubscriber (unit tests)', () => {
   let subscriber: EngineIssueCreatedSubscriber

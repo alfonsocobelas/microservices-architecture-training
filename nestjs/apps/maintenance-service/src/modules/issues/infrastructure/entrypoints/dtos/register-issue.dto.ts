@@ -1,6 +1,6 @@
 import { IsNotEmpty, IsOptional, IsString, IsUUID, IsEnum, IsBoolean, MinLength, MaxLength } from 'class-validator'
-import { IssuePartCategoryEnum, IssueSeverityLevelEnum } from 'src/contexts/maintenance/modules/issues/domain/issue-enums'
-import { ISSUE_CONSTRAINTS as LIMITS } from 'src/contexts/maintenance/modules/issues/domain/issue-constants'
+import { IssuePartCategoryEnum, IssueSeverityLevelEnum } from '../../../../../../src/modules/issues/domain/issue-enums'
+import { ISSUE_CONSTRAINTS as LIMITS } from '../../../../../../src/modules/issues/domain/issue-constants'
 
 export class RegisterIssueDto {
   @IsString()

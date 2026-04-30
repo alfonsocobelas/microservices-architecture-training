@@ -1,5 +1,5 @@
-import { Aircraft } from 'src/contexts/operations/modules/aircrafts/domain/aircraft'
-import { FindAircraftsInMaintenanceOutput } from 'src/contexts/operations/modules/aircrafts/application/dtos/find-aircrafts-in-maintenance-output.dto'
+import { FindAircraftsInMaintenanceOutput } from '../../../../../src/modules/aircrafts/application/dtos/find-aircrafts-in-maintenance-output.dto'
+import { Aircraft } from '../../../../../src/modules/aircrafts/domain/aircraft'
 
 export class FindAircraftsInMaintenanceOutputMother {
   static fromDomainList(aircrafts: Aircraft[]): FindAircraftsInMaintenanceOutput[] {

@@ -1,10 +1,8 @@
 import { v7 as uuidv7 } from 'uuid'
-import { RegisterIssueInput } from 'src/contexts/maintenance/modules/issues/application/dtos/register-issue-input.dto'
-import { IssuePartCategoryEnum, IssueSeverityLevelEnum } from 'src/contexts/maintenance/modules/issues/domain/issue-enums'
-import { ISSUE_CONSTRAINTS as LIMITS } from 'src/contexts/maintenance/modules/issues/domain/issue-constants'
-import { randomString } from '../../../shared/utils/random-string'
-import { randomBoolean } from '../../../shared/utils/random-boolean'
-import { randomEnumValue } from '../../../shared/utils/random-enum'
+import { randomBoolean, randomEnumValue, randomString } from '@libs/testing'
+import { RegisterIssueInput } from '../../../../../src/modules/issues/application/dtos/register-issue-input.dto'
+import { IssuePartCategoryEnum, IssueSeverityLevelEnum } from '../../../../../src/modules/issues/domain/issue-enums'
+import { ISSUE_CONSTRAINTS as LIMITS } from '../../../../../src/modules/issues/domain/issue-constants'
 
 export class RegisterIssueInputMother {
   static create(overrides?: Partial<RegisterIssueInput>): RegisterIssueInput {

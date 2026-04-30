@@ -1,8 +1,9 @@
-import { RemoveAircraftUseCase } from 'src/contexts/operations/modules/aircrafts/application/use-cases/remove-aircraft-usecase.service'
+
 import { RemoveAircraftInputMother } from '../mothers/remove-aircraft-input.mother'
 import { AircraftRepositoryMock } from '../../mocks/aircraft.repository.mock'
 import { AircraftMother } from '../../domain/aircraft.mother'
-import { EventBusMock } from '../../../shared/mocks/event-bus.mock'
+import { EventBusMock } from '@libs/testing'
+import { RemoveAircraftUseCase } from '../../../../../src/modules/aircrafts/application/use-cases/remove-aircraft-usecase.service'
 
 describe('RemoveAircraftUseCase (unit tests)', () => {
   let aircraftRepository: AircraftRepositoryMock

@@ -1,7 +1,7 @@
 import { v7 as uuidv7 } from 'uuid'
-import { RegisterAircraftInput } from 'src/contexts/operations/modules/aircrafts/application/dtos/register-aircraft-input.dto'
-import { AIRCRAFT_CONSTRAINTS as LIMITS } from 'src/contexts/operations/modules/aircrafts/domain/aircraft-constants'
-import { randomString } from '../../../shared/utils/random-string'
+import { randomString } from '@libs/testing'
+import { AIRCRAFT_CONSTRAINTS as LIMITS } from '../../../../../src/modules/aircrafts/domain/aircraft-constants'
+import { RegisterAircraftInput } from '../../../../../src/modules/aircrafts/application/dtos/register-aircraft-input.dto'
 
 export class RegisterAircraftInputMother {
   static create(overrides?: Partial<RegisterAircraftInput>): RegisterAircraftInput {

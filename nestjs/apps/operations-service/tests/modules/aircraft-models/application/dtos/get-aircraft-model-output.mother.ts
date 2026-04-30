@@ -1,5 +1,5 @@
-import { GetAircraftModelOutput } from 'src/contexts/operations/modules/aircraft-models/application/dtos/get-aircraft-model-output.dto'
-import { AircraftModel } from 'src/contexts/operations/modules/aircraft-models/domain/aircraft-model'
+import { GetAircraftModelOutput } from '../../../../../src/modules/aircraft-models/application/dtos/get-aircraft-model-output.dto'
+import { AircraftModel } from '../../../../../src/modules/aircraft-models/domain/aircraft-model'
 
 export class GetAircraftModelOutputMother {
   static fromDomain(aircraftModel: AircraftModel): GetAircraftModelOutput {

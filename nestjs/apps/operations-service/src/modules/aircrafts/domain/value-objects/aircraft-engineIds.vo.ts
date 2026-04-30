@@ -1,6 +1,6 @@
-import { AircraftModelNumEngines } from 'src/contexts/operations/modules/aircraft-models/domain/value-objects/aircraft-model-num-engines.vo'
 import { EngineId } from '@libs/shared/domain/value-objects/engines/engine-id.vo'
 import { ValueObjectList } from '@libs/shared/domain/value-objects/value-object-list'
+import { AircraftModelNumEngines } from '../../../aircraft-models/domain/value-objects/aircraft-model-num-engines.vo'
 
 export class AircraftEngineIds extends ValueObjectList<EngineId, AircraftEngineIds> {
   private constructor(engineIds: EngineId[]) {

@@ -1,11 +1,13 @@
-import { RetireAircraftFromFleetUsecase } from 'src/contexts/operations/modules/fleets/application/use-cases/retire-aircraft-from-fleet-usecase.service'
+
 import { RetireAircraftFromFleetInputMother } from '../mothers/retire-aircraft-from-fleet-input.mother'
 import { AircraftRepositoryMock } from '../../../aircrafts/mocks/aircraft.repository.mock'
 import { FleetRepositoryMock } from '../../mocks/fleet.repository.mock'
 import { AircraftBuilder } from '../../../aircrafts/domain/aircraft.builder'
 import { FleetBuilder } from '../../domain/fleet.builder'
-import { EventBusMock } from '../../../shared/mocks/event-bus.mock'
+
 import { AircraftMother } from '../../../aircrafts/domain/aircraft.mother'
+import { EventBusMock } from '@libs/testing'
+import { RetireAircraftFromFleetUsecase } from '../../../../../src/modules/fleets/application/use-cases/retire-aircraft-from-fleet-usecase.service'
 
 describe('RetireAircraftFromFleetUseCase (unit tests)', () => {
   let fleetRepository: FleetRepositoryMock

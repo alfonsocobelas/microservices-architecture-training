@@ -1,6 +1,6 @@
-import { EngineStatus } from 'src/contexts/operations/modules/engines/domain/value-objects/engine-status.vo'
-import { EngineStatusEnum } from 'src/contexts/operations/modules/engines/domain/engine-enums'
-import { randomEnumValue } from '../../../shared/utils/random-enum'
+import { randomEnumValue } from '@libs/testing'
+import { EngineStatusEnum } from '../../../../../src/modules/engines/domain/engine-enums'
+import { EngineStatus } from '../../../../../src/modules/engines/domain/value-objects/engine-status.vo'
 
 export class EngineStatusMother {
   static create(value: EngineStatusEnum): EngineStatus {

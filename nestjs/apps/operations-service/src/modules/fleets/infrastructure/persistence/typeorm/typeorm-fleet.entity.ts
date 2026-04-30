@@ -1,5 +1,5 @@
 import { Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn, DeleteDateColumn, Index, Check } from 'typeorm'
-import { FleetOperationRegionEnum, FleetStatusEnum, FleetTypeEnum } from 'src/contexts/operations/modules/fleets/domain/fleet-enums'
+import { FleetOperationRegionEnum, FleetStatusEnum, FleetTypeEnum } from '../../../../../../src/modules/fleets/domain/fleet-enums'
 import { FLEET_CONSTRAINTS as LIMITS } from '../../../domain/fleet-constants'
 
 @Entity({ name: 'fleets', schema: 'operations' })

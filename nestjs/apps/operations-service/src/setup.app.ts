@@ -3,7 +3,7 @@ import compression from 'compression'
 import { Reflector } from '@nestjs/core'
 import { NestExpressApplication } from '@nestjs/platform-express'
 import { ClassSerializerInterceptor, INestApplication, ValidationPipe, VersioningType } from '@nestjs/common'
-import { GlobalExceptionFilter } from './contexts/shared/infrastructure/filters/http-exception.filter'
+import { GlobalExceptionFilter } from './modules/shared/infrastructure/filters/http-exception.filter'
 
 export function setupApp(app: INestApplication | NestExpressApplication) {
   app.use(helmet())

@@ -1,9 +1,10 @@
-import { SearchFleetsUseCase } from 'src/contexts/operations/modules/fleets/application/use-cases/search-fleets-usecase.service'
+
 import { FleetMother } from '../../domain/fleet.mother'
 import { SearchFleetsInputMother } from '../mothers/search-fleets-input.mother'
 import { SearchFleetsOutputMother } from '../mothers/search-fleets-output.mother'
 import { FleetRepositoryMock } from '../../mocks/fleet.repository.mock'
-import { repeat } from '../../../shared/utils/random-array'
+import { repeat } from '@libs/testing'
+import { SearchFleetsUseCase } from '../../../../../src/modules/fleets/application/use-cases/search-fleets-usecase.service'
 
 describe('SearchFleetsUseCase (unit tests)', () => {
   let repository: FleetRepositoryMock

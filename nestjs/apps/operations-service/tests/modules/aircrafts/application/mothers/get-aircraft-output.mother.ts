@@ -1,7 +1,7 @@
-import { Engine } from 'src/contexts/operations/modules/engines/domain/engine'
-import { Aircraft } from 'src/contexts/operations/modules/aircrafts/domain/aircraft'
-import { AircraftModel } from 'src/contexts/operations/modules/aircraft-models/domain/aircraft-model'
-import { GetAircraftOutput } from 'src/contexts/operations/modules/aircrafts/application/dtos/get-aircraft-output.dto'
+import { AircraftModel } from '../../../../../src/modules/aircraft-models/domain/aircraft-model'
+import { GetAircraftOutput } from '../../../../../src/modules/aircrafts/application/dtos/get-aircraft-output.dto'
+import { Aircraft } from '../../../../../src/modules/aircrafts/domain/aircraft'
+import { Engine } from '../../../../../src/modules/engines/domain/engine'
 
 export class GetAircraftOutputMother {
   static fromDomain(aircraft: Aircraft, model: AircraftModel, engines: Engine[]): GetAircraftOutput {

@@ -1,8 +1,8 @@
-import { RegisterEngineUseCase } from 'src/contexts/operations/modules/engines/application/use-cases/register-engine-usecase.service'
+import { EventBusMock } from '@libs/testing'
 import { RegisterEngineInputMother } from '../mothers/register-engine-input.mother'
 import { EngineRepositoryMock } from '../../mocks/engine.repository.mock'
 import { EngineMother } from '../../domain/engine.mother'
-import { EventBusMock } from '../../../shared/mocks/event-bus.mock'
+import { RegisterEngineUseCase } from '../../../../../src/modules/engines/application/use-cases/register-engine-usecase.service'
 
 describe('RegisterEngineUseCase (unit tests)', () => {
   let repository: EngineRepositoryMock

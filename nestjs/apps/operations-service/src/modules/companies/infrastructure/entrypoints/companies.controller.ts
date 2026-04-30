@@ -1,10 +1,11 @@
 import { Body, Controller, Delete, Get, Param, Post } from '@nestjs/common'
-import { ParseUUIDv7Pipe } from '@libs/shared/infrastructure/pipes/parse-uuid-v7.pipe'
+
 import { RegisterCompanyDto } from './dtos/register-company.dto'
 import { GetCompanyResponse } from './dtos/get-company.response'
 import { GetCompanyHandler } from '../../application/handlers/get-company.handler'
 import { RemoveCompanyHandler } from '../../application/handlers/remove-company.handler'
 import { RegisterCompanyHandler } from '../../application/handlers/register-company.handler'
+import { ParseUUIDv7Pipe } from '../../../shared/infrastructure/pipes/parse-uuid-v7.pipe'
 
 @Controller('companies')
 export class CompaniesController {

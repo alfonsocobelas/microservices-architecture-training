@@ -1,17 +1,17 @@
 import { EntityTarget, In } from 'typeorm'
 import { Injectable } from '@nestjs/common'
-import { Engine } from 'src/contexts/operations/modules/engines/domain/engine'
 import { Nullable } from '@libs/shared/types'
 import { Criteria } from '@libs/shared/domain/query/criteria'
-import { EngineRepository } from 'src/contexts/operations/modules/engines/domain/engine.repository'
+import { EngineId } from '@libs/shared/domain/value-objects/engines/engine-id.vo'
 import { TypeOrmRepository } from '@libs/shared/infrastructure/persistence/typeorm/typeorm.repository'
 import { TypeOrmCriteriaConverter } from '@libs/shared/infrastructure/persistence/typeorm/typeorm-criteria-converter'
 import { TypeOrmTransactionManager } from '@libs/shared/infrastructure/persistence/typeorm/typeorm-transaction-manager'
 import { EngineMapper } from './typeorm-engine.mapper'
 import { EngineEntity } from './typeorm-engine.entity'
-import { EngineId } from '@libs/shared/domain/value-objects/engines/engine-id.vo'
-import { EngineSerialNumber } from 'src/contexts/operations/modules/engines/domain/value-objects/engine-serial-number.vo'
+import { Engine } from '../../../domain/engine'
 import { EngineStatus } from '../../../domain/value-objects/engine-status.vo'
+import { EngineRepository } from '../../../domain/engine.repository'
+import { EngineSerialNumber } from '../../../domain/value-objects/engine-serial-number.vo'
 
 @Injectable()
 export class TypeOrmEngineRepository

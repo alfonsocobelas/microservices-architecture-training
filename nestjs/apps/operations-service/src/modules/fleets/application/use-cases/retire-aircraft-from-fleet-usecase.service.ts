@@ -1,11 +1,12 @@
 import { Injectable } from '@nestjs/common'
 import { EventBus } from '@libs/shared/domain/event-bus/event-bus'
 import { AircraftId } from '@libs/shared/domain/value-objects/aircrafts/aircraft-id.vo'
-import { FleetRepository } from 'src/contexts/operations/modules/fleets/domain/fleet.repository'
-import { AircraftRepository } from 'src/contexts/operations/modules/aircrafts/domain/aircraft.repository'
+
 import { EntityNotFoundError } from '@libs/shared/errors'
 import { RetireAircraftFromFleetInput } from '../dtos/retire-aircraft-from-fleet-input'
 import { FleetId } from '../../domain/value-objects/fleet-id.vo'
+import { FleetRepository } from '../../domain/fleet.repository'
+import { AircraftRepository } from '../../../aircrafts/domain/aircraft.repository'
 
 @Injectable()
 export class RetireAircraftFromFleetUsecase {

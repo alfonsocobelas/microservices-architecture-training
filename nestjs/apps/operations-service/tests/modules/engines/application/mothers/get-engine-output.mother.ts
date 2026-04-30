@@ -1,5 +1,5 @@
-import { GetEngineOutput } from 'src/contexts/operations/modules/engines/application/dtos/get-engine-output.dto'
-import { Engine } from 'src/contexts/operations/modules/engines/domain/engine'
+import { GetEngineOutput } from '../../../../../src/modules/engines/application/dtos/get-engine-output.dto'
+import { Engine } from '../../../../../src/modules/engines/domain/engine'
 
 export class GetEngineOutputMother {
   static fromDomain(engine: Engine): GetEngineOutput {

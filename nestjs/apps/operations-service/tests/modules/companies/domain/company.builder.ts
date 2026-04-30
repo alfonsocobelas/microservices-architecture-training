@@ -1,10 +1,11 @@
 import { v7 as uuidv7 } from 'uuid'
-import { Company } from 'src/contexts/operations/modules/companies/domain/company'
-import { CompanyId } from '../../../../src/modules/shared/domain/companies/company-id.vo'
-import { CompanyName } from 'src/contexts/operations/modules/companies/domain/value-objects/company-name.vo'
-import { CompanyPrimitiveProps } from 'src/contexts/operations/modules/companies/domain/company-types'
-import { COMPANY_CONSTRAINTS as LIMITS } from 'src/contexts/operations/modules/companies/domain/company-constants'
-import { randomString } from '../../shared/utils/random-string'
+
+import { COMPANY_CONSTRAINTS as LIMITS } from '../../../../src/modules/companies/domain/company-constants'
+import { CompanyId } from '@libs/shared'
+import { randomString } from '@libs/testing'
+import { Company } from '../../../../src/modules/companies/domain/company'
+import { CompanyPrimitiveProps } from '../../../../src/modules/companies/domain/company-types'
+import { CompanyName } from '../../../../src/modules/companies/domain/value-objects/company-name.vo'
 
 /**
  * IMPORTANT: In integration tests, be careful with fields that have uniqueness constraints.

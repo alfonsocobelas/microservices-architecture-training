@@ -1,8 +1,8 @@
-import { GetIssueUseCase } from 'src/contexts/maintenance/modules/issues/application/use-cases/get-issue-usecase.service'
+import { IssueMother } from '../../domain/issue.mother'
 import { GetIssueInputMother } from '../mothers/get-issue-input.mother'
 import { GetIssueOutputMother } from '../mothers/get-issue-output.mother'
-import { IssueMother } from '../../domain/issue.mother'
 import { IssueRepositoryMock } from '../../mocks/issue.repository.mock'
+import { GetIssueUseCase } from '../../../../../src/modules/issues/application/use-cases/get-issue-usecase.service'
 
 describe('GetIssueUseCase (unit tests)', () => {
   let issueRepository: IssueRepositoryMock

@@ -1,5 +1,5 @@
-import { GetIssueOutput } from 'src/contexts/maintenance/modules/issues/application/dtos/get-issue-output.dto'
-import { Issue } from 'src/contexts/maintenance/modules/issues/domain/issue'
+import { Issue } from '../../../../../src/modules/issues/domain/issue'
+import { GetIssueOutput } from '../../../../../src/modules/issues/application/dtos/get-issue-output.dto'
 
 export class GetIssueOutputMother {
   static fromDomain(issue: Issue): GetIssueOutput {

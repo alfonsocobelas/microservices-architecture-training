@@ -1,10 +1,10 @@
 import fc from 'fast-check'
 import { normalizeString } from '@libs/shared/utils/normalize'
-import { Fleet } from 'src/contexts/operations/modules/fleets/domain/fleet'
-import { FleetStatusEnum, FleetTypeEnum, FleetOperationRegionEnum } from 'src/contexts/operations/modules/fleets/domain/fleet-enums'
-import { FLEET_CONSTRAINTS as LIMITS } from 'src/contexts/operations/modules/fleets/domain/fleet-constants'
+import { FLEET_CONSTRAINTS as LIMITS } from '../../../../src/modules/fleets/domain/fleet-constants'
 import { FleetBuilder } from './fleet.builder'
-import { AircraftIdMother } from '../../shared/domain/mothers/aircraftId.mother'
+import { AircraftIdMother } from '@libs/testing'
+import { Fleet } from '../../../../src/modules/fleets/domain/fleet'
+import { FleetOperationRegionEnum, FleetTypeEnum, FleetStatusEnum } from '../../../../src/modules/fleets/domain/fleet-enums'
 
 describe('Fleet domain model (unit/property-based tests)', () => {
 

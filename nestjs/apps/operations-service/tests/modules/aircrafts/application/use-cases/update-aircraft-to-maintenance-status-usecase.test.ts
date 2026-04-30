@@ -1,9 +1,11 @@
-import { UpdateAircraftToMaintenanceStatusUseCase } from 'src/contexts/operations/modules/aircrafts/application/use-cases/update-aircraft-to-maintenance-status-usecase.service'
+
 import { UpdateAircraftToMaintenanceStatusInputMother } from '../mothers/update-aircraft-to-maintenance-status-input.mother'
-import { AircraftIdMother } from '../../../shared/domain/mothers/aircraftId.mother'
+
 import { AircraftMother } from '../../domain/aircraft.mother'
-import { EventBusMock } from '../../../shared/mocks/event-bus.mock'
+
 import { AircraftRepositoryMock } from '../../mocks/aircraft.repository.mock'
+import { EventBusMock, AircraftIdMother } from '@libs/testing'
+import { UpdateAircraftToMaintenanceStatusUseCase } from '../../../../../src/modules/aircrafts/application/use-cases/update-aircraft-to-maintenance-status-usecase.service'
 
 describe('UpdateAircraftToMaintenanceStatusUseCase (unit tests)', () => {
   let repository: AircraftRepositoryMock

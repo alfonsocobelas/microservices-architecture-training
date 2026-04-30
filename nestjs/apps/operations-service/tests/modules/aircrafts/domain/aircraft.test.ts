@@ -1,12 +1,12 @@
 import fc from 'fast-check'
 import { normalizeString } from '@libs/shared/utils/normalize'
-import { Aircraft } from 'src/contexts/operations/modules/aircrafts/domain/aircraft'
-import { AircraftStatusEnum } from 'src/contexts/operations/modules/aircrafts/domain/aircraft-enums'
-import { AIRCRAFT_CONSTRAINTS as LIMITS } from 'src/contexts/operations/modules/aircrafts/domain/aircraft-constants'
+import { AIRCRAFT_CONSTRAINTS as LIMITS } from '../../../../src/modules/aircrafts/domain/aircraft-constants'
 import { AircraftBuilder } from './aircraft.builder'
 import { FleetIdMother } from '../../fleets/domain/value-objects/fleet-id.mother'
 import { EngineIdMother } from '../../engines/domain/value-objects/engine-id.mother'
 import { AircraftModelNumEnginesMother } from '../../aircraft-models/domain/value-objects/aircraft-model-num-engines.mother'
+import { AircraftStatusEnum } from '../../../../src/modules/aircrafts/domain/aircraft-enums'
+import { Aircraft } from '../../../../src/modules/aircrafts/domain/aircraft'
 
 describe('Aircraft domain model (unit/property-based test)', () => {
 

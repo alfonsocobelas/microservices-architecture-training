@@ -1,10 +1,9 @@
 import { v7 as uuidv7 } from 'uuid'
-import { RegisterFleetInput } from 'src/contexts/operations/modules/fleets/application/dtos/register-fleet-input.dto'
-import { FleetTypeEnum, FleetOperationRegionEnum } from 'src/contexts/operations/modules/fleets/domain/fleet-enums'
-import { FLEET_CONSTRAINTS as LIMITS } from 'src/contexts/operations/modules/fleets/domain/fleet-constants'
-import { randomString } from '../../../shared/utils/random-string'
-import { randomNumber } from '../../../shared/utils/random-number'
-import { randomEnumValue } from '../../../shared/utils/random-enum'
+
+import { FLEET_CONSTRAINTS as LIMITS } from '../../../../../src/modules/fleets/domain/fleet-constants'
+import { randomString, randomNumber, randomEnumValue } from '@libs/testing'
+import { RegisterFleetInput } from '../../../../../src/modules/fleets/application/dtos/register-fleet-input.dto'
+import { FleetTypeEnum, FleetOperationRegionEnum } from '../../../../../src/modules/fleets/domain/fleet-enums'
 
 export class RegisterFleetInputMother {
   static create(overrides?: Partial<RegisterFleetInput>): RegisterFleetInput {

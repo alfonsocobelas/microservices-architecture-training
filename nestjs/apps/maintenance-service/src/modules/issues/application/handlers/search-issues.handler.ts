@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common'
-import { PaginateCursorDto } from '@libs/shared/infrastructure/dtos/paginate-cursor.dto'
 import { SearchIssuesResponse } from '../../infrastructure/entrypoints/dtos/search-issues.response'
 import { SearchIssuesUseCase } from '../use-cases/search-issues-usecase.service'
+import { PaginateCursorDto } from '../../../shared/infrastructure/dtos/paginate-cursor.dto'
 
 @Injectable()
 export class SearchIssuesHandler {

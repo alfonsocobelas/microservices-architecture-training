@@ -1,11 +1,12 @@
-import { withTailNumber } from 'src/contexts/operations/modules/aircrafts/domain/specifications/aircraft-with-tail-number.specification'
-import { RegisterAircraftUseCase } from 'src/contexts/operations/modules/aircrafts/application/use-cases/register-aircraft-usecase.service'
+
 import { RegisterAircraftInputMother } from '../mothers/register-aircraft-input.mother'
 import { AircraftModelBuilder } from '../../../aircraft-models/domain/aircraft-model.builder'
 import { AircraftMother } from '../../domain/aircraft.mother'
 import { AircraftModelRepositoryMock } from '../../../aircraft-models/mocks/aircraft-model.repository.mock'
 import { AircraftRepositoryMock } from '../../mocks/aircraft.repository.mock'
-import { EventBusMock } from '../../../shared/mocks/event-bus.mock'
+import { EventBusMock } from '@libs/testing'
+import { RegisterAircraftUseCase } from '../../../../../src/modules/aircrafts/application/use-cases/register-aircraft-usecase.service'
+import { withTailNumber } from '../../../../../src/modules/aircrafts/domain/specifications/aircraft-with-tail-number.specification'
 
 describe('RegisterAircraftUseCase (unit tests)', () => {
   let aircraftRepository: AircraftRepositoryMock

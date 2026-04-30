@@ -1,13 +1,14 @@
 import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common'
-import { ParseCriteriaPipe } from '@libs/shared/infrastructure/pipes/parse-criteria.pipe'
-import { ParseUUIDv7Pipe } from '@libs/shared/infrastructure/pipes/parse-uuid-v7.pipe'
-import { PaginateCursorDto } from '@libs/shared/infrastructure/dtos/paginate-cursor.dto'
+
 import { RegisterEngineDto } from './dtos/register-engine.dto'
 import { GetEngineResponse } from './dtos/get-engine.response'
 import { SearchEnginesResponse } from './dtos/search-engines.response'
 import { GetEngineHandler } from '../../application/handler/get-engine.handler'
 import { SearchEnginesHandler } from '../../application/handler/search-engines.handler'
 import { RegisterEngineHandler } from '../../application/handler/register-engine.handler'
+import { ParseUUIDv7Pipe } from '../../../shared/infrastructure/pipes/parse-uuid-v7.pipe'
+import { ParseCriteriaPipe } from '../../../shared/infrastructure/pipes/parse-criteria.pipe'
+import { PaginateCursorDto } from '../../../shared/infrastructure/dtos/paginate-cursor.dto'
 
 @Controller('engines')
 export class EnginesController {

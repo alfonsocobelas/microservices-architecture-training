@@ -1,8 +1,7 @@
+import { randomString } from '@libs/testing'
 import { v7 as uuidv7 } from 'uuid'
-import { RegisterCompanyInput } from 'src/contexts/operations/modules/companies/application/dtos/register-company-input.dto'
-import { COMPANY_CONSTRAINTS as LIMITS } from 'src/contexts/operations/modules/companies/domain/company-constants'
-import { randomString } from '../../../shared/utils/random-string'
-
+import { RegisterCompanyInput } from '../../../../../src/modules/companies/application/dtos/register-company-input.dto'
+import { COMPANY_CONSTRAINTS as LIMITS } from '../../../../../src/modules/companies/domain/company-constants'
 export class RegisterCompanyInputMother {
   static create(overrides?: Partial<RegisterCompanyInput>): RegisterCompanyInput {
     return {

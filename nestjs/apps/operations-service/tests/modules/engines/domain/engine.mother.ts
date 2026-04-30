@@ -1,9 +1,10 @@
 import { v7 as uuidv7 } from 'uuid'
-import { Engine } from 'src/contexts/operations/modules/engines/domain/engine'
-import { EngineStatusEnum } from 'src/contexts/operations/modules/engines/domain/engine-enums'
-import { EngineCreateProps, EnginePrimitiveProps } from 'src/contexts/operations/modules/engines/domain/engine-types'
+
 import { EngineBuilder } from './engine.builder'
-import { repeat } from '../../shared/utils/random-array'
+import { repeat } from '@libs/testing'
+import { Engine } from '../../../../src/modules/engines/domain/engine'
+import { EngineStatusEnum } from '../../../../src/modules/engines/domain/engine-enums'
+import { EnginePrimitiveProps, EngineCreateProps } from '../../../../src/modules/engines/domain/engine-types'
 
 export class EngineMother {
   static fromInput(input: Partial<EnginePrimitiveProps>): Engine {
