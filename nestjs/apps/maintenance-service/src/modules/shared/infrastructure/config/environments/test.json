@@ -9,7 +9,7 @@
     "password": "sup3rs3cr3t",
     "database": "maintenance-ms-nestjs-test",
     "autoLoadEntities": true,
-    "synchronize": false,
+    "synchronize": true,
     "dropSchema": false,
     "logging": false,
     "migrationsRun": false,
