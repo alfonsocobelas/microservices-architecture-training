@@ -3,7 +3,7 @@ module.exports = {
   default: {
     paths: ['tests/infrastructure/entrypoints/features/**/*.feature'],
     require: [
-      './tests/infrastructure/entrypoints/step-definitions/**/*.ts',
+      'tests/infrastructure/entrypoints/step-definitions/**/*.ts',
       '../../../libs/testing/entrypoints/step-definitions/shared/common.steps.ts'
     ],
     requireModule: ['ts-node/register', 'tsconfig-paths/register'],
@@ -23,7 +23,7 @@ module.exports = {
   ci: {
     paths: ['tests/infrastructure/entrypoints/features/**/*.feature'],
     require: [
-      './tests/infrastructure/entrypoints/step-definitions/**/*.ts',
+      'tests/infrastructure/entrypoints/step-definitions/**/*.ts',
       '../../../libs/testing/entrypoints/step-definitions/shared/common.steps.ts'
     ],
     requireModule: ['ts-node/register', 'tsconfig-paths/register'],

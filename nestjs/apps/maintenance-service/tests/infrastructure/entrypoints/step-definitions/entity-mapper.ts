@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { IssueEntity } from '../../../../../src/modules/issues/infrastructure/persistence/typeorm/typeorm-issue.entity'
+import { IssueEntity } from '../../../../src/modules/issues/infrastructure/persistence/typeorm/typeorm-issue.entity'
 
 type EntityConstructor = { new (): any }
 

@@ -10,6 +10,7 @@ data/
 .tmp/jestCache/
 apps/maintenance-service/.tmp/
 apps/operations-service/.tmp/
+tests/.tmp/
 
 # coverage tests
 coverage/

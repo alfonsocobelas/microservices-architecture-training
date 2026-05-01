@@ -16,4 +16,4 @@ import { PersistenceModule } from './modules/shared/infrastructure/persistence/p
   controllers: [],
   providers: []
 })
-export class MaintenanceServiceModule {}
+export class AppModule {}

@@ -1,11 +1,11 @@
 import { NestFactory } from '@nestjs/core'
 import { ConfigService } from '@nestjs/config'
 import type { NestExpressApplication } from '@nestjs/platform-express'
-import { MaintenanceServiceModule } from './maintenance-service.module'
+import { AppModule } from './app.module'
 import { setupApp } from './setup.app'
 
 async function bootstrap() {
-  const app = await NestFactory.create<NestExpressApplication>(MaintenanceServiceModule)
+  const app = await NestFactory.create<NestExpressApplication>(AppModule)
   setupApp(app)
 
   const configService = app.get(ConfigService)

@@ -3,7 +3,6 @@ import * as sinon from 'sinon'
 import { DataSource } from 'typeorm'
 import { Test, TestingModule } from '@nestjs/testing'
 import { INestApplication, Type } from '@nestjs/common'
-import { NestExpressApplication } from '@nestjs/platform-express'
 import { BeforeAll, AfterAll, Before, After, setDefaultTimeout } from '@cucumber/cucumber'
 import { EventBusEnvironmentArranger } from '@libs/testing/arranger/event-bus-environment-arranger'
 import { PersistenceEnvironmentArranger } from '@libs/testing/arranger/persistence-environment-arranger'
@@ -11,7 +10,7 @@ import { MyWorld } from './world'
 
 export type CucumberIntegrationSetupOptions = {
   appModule: Type<any>,
-  setupApp: (app: INestApplication | NestExpressApplication) => INestApplication | NestExpressApplication,
+  setupApp: (app: INestApplication) => INestApplication,
   providers?: any[],
 }
 

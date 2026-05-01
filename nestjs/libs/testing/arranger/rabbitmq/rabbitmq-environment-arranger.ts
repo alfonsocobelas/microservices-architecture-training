@@ -29,8 +29,14 @@ export class RabbitMQEnvironmentArranger
     ]
 
     for (const queue of queues) {
-      await this.connection.queue({ queueName: queue })
-      await this.connection.purgeQueue(queue)
+      try {
+        await this.connection.purgeQueue(queue)
+      } catch (err) {
+        if (err instanceof Error && err.message.includes('NOT_FOUND')) {
+          continue
+        }
+        throw err
+      }
     }
   }
 }

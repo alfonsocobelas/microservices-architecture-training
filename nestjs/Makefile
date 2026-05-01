@@ -12,19 +12,19 @@ docker-test-restart:
 docker-test-stop: docker-test-cleanup
 
 docker-test-cleanup-maintenanceMs:
-  @docker compose -p maintenanceMs-nestjs -f ./apps/maintenanceMs/tests/infrastructure/docker/docker-compose.yml down -v
+	@docker compose -p maintenancems-nestjs -f ./apps/maintenance-service/tests/infrastructure/docker/docker-compose.test.yml down -v
 docker-test-start-maintenanceMs: docker-test-cleanup-maintenanceMs
-  @docker compose -p maintenanceMs-nestjs -f ./apps/maintenanceMs/tests/infrastructure/docker/docker-compose.yml up -d
+	@docker compose -p maintenancems-nestjs -f ./apps/maintenance-service/tests/infrastructure/docker/docker-compose.test.yml up -d
 docker-test-restart-maintenanceMs:
-  @docker compose -p maintenanceMs-nestjs -f ./apps/maintenanceMs/tests/infrastructure/docker/docker-compose.yml restart
+	@docker compose -p maintenancems-nestjs -f ./apps/maintenance-service/tests/infrastructure/docker/docker-compose.test.yml restart
 docker-test-stop-maintenanceMs: docker-test-cleanup-maintenanceMs
 
 docker-test-cleanup-operationsMs:
-  @docker compose -p operationsMs-nestjs -f ./apps/operationsMs/tests/infrastructure/docker/docker-compose.yml down -v
+	@docker compose -p operationsms-nestjs -f ./apps/operations-service/tests/infrastructure/docker/docker-compose.test.yml down -v
 docker-test-start-operationsMs: docker-test-cleanup-operationsMs
-  @docker compose -p operationsMs-nestjs -f ./apps/operationsMs/tests/infrastructure/docker/docker-compose.yml up -d
+	@docker compose -p operationsms-nestjs -f ./apps/operations-service/tests/infrastructure/docker/docker-compose.test.yml up -d
 docker-test-restart-operationsMs:
-  @docker compose -p operationsMs-nestjs -f ./apps/operationsMs/tests/infrastructure/docker/docker-compose.yml restart
+	@docker compose -p operationsms-nestjs -f ./apps/operations-service/tests/infrastructure/docker/docker-compose.test.yml restart
 docker-test-stop-operationsMs: docker-test-cleanup-operationsMs
 
 # GIT

@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common'
-import { SharedModule } from '@libs/shared'
+import { EventBusModule } from '@libs/shared'
 import { FleetsModule } from './modules/fleets/fleets.module'
 import { EnginesModule } from './modules/engines/engines.module'
 import { AircraftsModule } from './modules/aircrafts/aircrafts.module'
@@ -13,7 +13,7 @@ import { AircraftModelsModule } from './modules/aircraft-models/aircraft-models.
     // infrastructure
     CoreConfigModule,
     PersistenceModule,
-    SharedModule,
+    EventBusModule,
     // modules
     AircraftModelsModule,
     AircraftsModule,
@@ -24,4 +24,4 @@ import { AircraftModelsModule } from './modules/aircraft-models/aircraft-models.
   controllers: [],
   providers: []
 })
-export class OperationsServiceModule {}
+export class AppModule {}

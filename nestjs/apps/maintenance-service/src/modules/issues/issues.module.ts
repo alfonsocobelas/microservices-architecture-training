@@ -1,5 +1,4 @@
 import { Module } from '@nestjs/common'
-import { SharedModule } from '@libs/shared'
 import { EventBusModule } from '@libs/shared/infrastructure/event-bus/event-bus.module'
 import { GetIssueHandler } from './application/handlers/get-issue.handler'
 import { RegisterIssueHandler } from './application/handlers/register-issue.handler'
@@ -12,7 +11,7 @@ import { IssuesController } from './infrastructure/entrypoints/issues.controller
 import { TypeOrmIssueRepository } from './infrastructure/persistence/typeorm/typeorm-issue.repository'
 
 @Module({
-  imports: [EventBusModule, SharedModule],
+  imports: [EventBusModule],
   controllers: [IssuesController],
   providers: [
     // Handlers
